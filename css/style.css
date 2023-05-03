@@ -1,0 +1,353 @@
+@import url('https://fonts.cdnfonts.com/css/sansation');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+
+.background-section {
+    height: 100vh;
+    background-image: url('../imgs/inicio4.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.banner{
+    position: relative;
+    text-align: center;
+    margin-left: 0px;
+    padding-top: 18%;
+    padding-left: 10%;
+    font-family: 'Sansation';
+}
+
+.navbar-main {
+    background-color: rgb(37, 37, 37, 0.8);
+}
+
+.feature-block {
+	background: rgb(37, 37, 37, 0.8);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1em;
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.feature-block.hover .swipe.left {
+	opacity: 1;
+}
+
+.feature-block .ico {
+	position: relative;
+	top: 0;
+	display: block;
+	margin: 0 auto 10px;
+	-webkit-transition: top .2s linear;
+	transition: top .2s linear;
+	font-size: 25px;
+	line-height: 1;
+}
+
+.feature-block .info {
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+}
+
+.feature-block .holder {
+	overflow-x: auto; /* 1 */
+	-webkit-overflow-scrolling: touch; /* 2 */
+}
+
+.feature-block ul {
+	text-align: center;
+	overflow: hidden;
+}
+
+.feature-block li {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: -.15em;
+	padding: 0px;
+	position: relative;
+	width: 10.0%;
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.feature-block li:first-child:before {
+	display: none;
+}
+
+.feature-block li:before {
+	content: '';
+	position: absolute;
+	left: -1px;
+	top: 0;
+	bottom: 0;
+	background: #000;
+	width: 1px;
+}
+
+.feature-block li a {
+	display: block;
+	height: 100%;
+	color: #9d9d9d;
+}
+
+.feature-block li a:hover {
+	color: #b0a377;
+}
+
+.feature-block li a:hover .ico {
+	top: -5px;
+}
+
+
+.titulo-principal{
+    font-family: 'Sansation';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+
+.titulo-secundario{
+    font-family: 'Sansation Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 1.2px;
+
+    color: #5C5E62;
+}
+
+.seperator {
+	border-bottom: 1px solid #e2e2e2;
+	position: relative;
+	padding-bottom: 30px;
+}
+
+
+
+
+
+a.thumbnail {
+	padding: 0;
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	overflow: hidden;
+}
+
+a.thumbnail img {
+	width: 100%;
+	max-width: none;
+}
+
+.adventure-holder .text-block .centered {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	padding: 30px 50px 15px;
+    
+}
+
+.adventure-holder .text-block .sobre-titulo {
+    font-family: 'Sansation';
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.adventure-holder .text-block .sobre-desc{
+    font-family: 'Sansation Light';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: justify;
+}
+
+
+.gallery-list {
+	margin: 0 -5px 20px;
+}
+
+.gallery-list a {
+	overflow: hidden;
+	margin: 0;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.gallery-list a img {
+	-webkit-transition: -webkit-transform .3s linear;
+	transition: transform .3s linear;
+}
+
+.gallery-list a:hover img {
+	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+}
+
+.gallery-list li {
+	float: left;
+	width: 100%;
+	padding: 0 5px;
+	margin-bottom: 0px;
+	position: relative;
+	overflow: hidden;
+	clear: right;
+}
+
+
+#atividades{
+    background-color: #FAFAFA;
+}
+
+.categoria{
+    width: 100%;
+    background-color: #272727;
+    color: white;
+}
+
+.categoria h1{
+    font-family: 'Sansation';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+}
+
+.atividade{
+    padding-top: 20px;
+}
+
+.atividade figcaption{
+    padding: 7px;
+    padding-left: 10px;
+    font-family: 'Sansation';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.atividade p{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#indicadores{
+    background-color: #EDEEEF;
+    text-align: center;
+}
+
+
+.dados{
+	padding: 50px;
+}
+
+.dados h1{
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 65px;
+	line-height: 84px;
+	color: #3C4A5B;
+	text-align: center;
+}
+
+.dados p{
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 34px;
+	text-align: center;
+	color: #68778D;
+}
+
+.opiniao h1{
+	font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 33px;
+text-align: center;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #474D4B;
+}
+
+
+.teste{
+
+position: relative;
+width: 395px;
+height: 241px;
+background: #FDFDFD;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+border-radius: 15px;
+}
+
+
+
+.testemunho{
+	font-family: 'Barlow';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 23px;
+	color: #464255;
+}
+
+#equipa{
+    background-color: #fff;
+    text-align: center;
+}
+
+.thumb-membro{
+	width: 40%;
+}
+
+.membros .nome{
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 16px;
+	/* identical to box height, or 133% */
+
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #434040;
+}
+
+.membros .funcao{
+	font-family: 'Sansation';
+	font-style: italic;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 16px;
+	/* or 133% */
+
+	text-align: center;
+
+	color: #767B80;
+}
+
+footer{
+    background-color: #252525;
+}

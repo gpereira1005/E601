@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<!-- 
+Duvidas: 
+
+- Login com localStorage ou json 
+- Reservas é com json
+- Devemos fazer o codigo em html e depois vue ou começar logo com vue
+
+-->
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>RadicalEvents</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"> <!--CDN do bootsrap-->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"> <!--CDN de icons bootsrap-->
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-main">
+    <div class="container-fluid">
+      <a class="navbar-brand" href=""><img src="/imgs/radical_logo_nb.png" style="width: 20%; margin-left: 40px;"></a> <!--Melhorar isto-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre-nos">Sobre Nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#atividades">Atividades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#equipa">Equipa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reservas">Reservas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactos">Contactos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#login">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="background-section">
+    <div class="container-fluid">
+      <div class="row banner">
+        <div class="col-5">
+            <h1>O FASCINIO DA NATUREZA, <br> OFERECE MOMENTOS UNICOS</h1>
+            <p>Uma aventura única e memorável!<p>
+        </div>        
+      </div>
+    </div>
+  </section>
+
+  <div class="feature-block">
+    <div class="holder">
+        <ul>
+            <li>
+                <a href="https://www.naturimont.com/bicicletas.html">
+                    <span class="ico" style="z-index: 99;">
+                        <i class="bi bi-bicycle"></i>
+                    </span>
+                    <span class="info">Rappel</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.naturimont.com/caminhadas.html">
+                    <span class="ico" style="z-index: 99;">
+                        <i class="bi bi-bicycle"></i>
+                    </span>
+                    <span class="info">Slide</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.naturimont.com/canoagem.html">
+                    <span class="ico" style="z-index: 99;">
+                        <i class="bi bi-bicycle"></i>
+                    </span>
+                    <span class="info">Canoagem</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.naturimont.com/canyoning.html">
+                    <span class="ico" style="z-index: 99;">
+                        <i class="bi bi-bicycle"></i>
+                    </span>
+                    <span class="info">Canyoning</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.naturimont.com/moto-agua.html">
+                    <span class="ico" style="z-index: 99;">
+                        <i class="bi bi-bicycle"></i>
+                    </span>
+                    <span class="info">Parapente</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.naturimont.com/passeios-barco.html">
+                    <span class="ico" style="z-index: 99;">
+                        <i class="bi bi-bicycle"></i>
+                    </span>
+                    <span class="info">Flyboard</span>
+                </a>
+            </li>        
+            <li>
+                <a href="https://www.naturimont.com/passeios-tt.html">
+                    <span class="ico" style="z-index: 99;">
+                        <i class="bi bi-bicycle"></i>
+                    </span>
+                    <span class="info">Paraquedas</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.naturimont.com/stand-up-padle.html">
+                    <span class="ico" style="z-index: 99;">
+                        <i class="bi bi-bicycle"></i>
+                    </span>
+                    <span class="info">Passeios TT</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.naturimont.com/passeios-barco.html">
+                    <span class="ico" style="z-index: 99;">
+                        <i class="bi bi-bicycle"></i>
+                    </span>
+                    <span class="info">Paintball</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <div class="container p-5" id="sobre-nos">
+        <div class="inicio p-5">
+            <h2 class="titulo-principal">DESPORTO, AVENTURA E TURISMO</h2>
+            <p class="titulo-secundario">Planeamento e organização de eventos desportivos, de <br> animação e atividades de aventura</span>
+            <div class="seperator"></div>
+        </div>
+
+        <div class="adventure-holder">
+            <div class="row">
+                <div class="col-md-6 img-block">
+                    <ul class="gallery-list gallery-with-icon">
+                        <li>
+                            <a href="atividades.html" class="thumbnail">
+                                <img src="/imgs/inicio1.png" height="160" width="510" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="animacao-espacos-urbanos.html" class="thumbnail">
+                                <img src="/imgs/inicio2.png" height="160" width="510" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="team-building.html" class="thumbnail">
+                                <img src="/imgs/inicio3.png" height="160" width="510" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="projetos-consultoria_esportiva.html" class="thumbnail">
+                                <img src="/imgs/inicio4.png" height="160" width="510" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-block">
+                    <div class="centered">
+                        <h2 class="sobre-titulo">Com a Radical Events, viver o melhor lado da vida é fácil!</h2><br>
+                        <p class="sobre-desc">
+                            A Radical Events é uma equipa que tem como objetivo proporcionar experiências de aventura inesquecíveis.
+                            Aproveitando todos os encantos que a natureza de Portugal tem para oferecer conseguimos desenvolver várias atividades com muita adrenalina, sempre com a máxima segurança e com os melhores profissionais.
+                            Promovemos atividades radicais individuais ou em grupo, proporcionando, a quem nos visita, momentos únicos e cheios de emoção.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5" id="atividades">
+        <div class="container p-5">
+            <h2 class="titulo-principal">ATIVIDADES</h2>
+            <div class="seperator"></div>
+            <!--Categoria 1-->
+            <div class="categoria">
+                <h1>DESPORTOS MARITIMOS</h1>
+            </div>
+            <div class="container">
+                <div class="row atividade" id="maritimos">
+                    <!--<div class="col-md-4">
+                        <figure>
+                            <a href="atividades.html"><img src="/imgs/inicio1.png" class="img-fluid"></a>
+                            <figcaption class="bg-dark text-light">Desde 17€ pax</figcaption>
+                            <p>CANOAGEM</p>
+                        </figure>
+                    </div>-->
+                    
+                </div>
+            </div>       
+            <!--Categoria 2-->
+            <div class="categoria">
+                <h1>DESPORTOS TERRESTRES</h1>
+            </div>
+            <div class="container">
+                <div class="row atividade" id="terrestres">
+                    
+                </div>
+            </div>  
+            <!--Categoria 3-->
+            <div class="categoria">
+                <h1>DESPORTOS AEREOS</h1>
+            </div>
+            <div class="container">
+                <div class="row atividade" id="aereos">
+                    
+                </div>
+            </div>       
+        </div>
+    </div>
+
+    <div class="container-fluid p-5" id="indicadores">
+        <div class="container p-5">
+            <h2 class="titulo-principal">RADICAL EVENTS, UM LUGAR <br> ONDE A AVENTURA NÃO TEM FIM!</h2>
+            <p class="titulo-secundario">Mais de 20 anos de experiência.</h2>
+            <div class="row dados">
+                <div class="col-md-4">
+                    <h1>200+</h1>
+                    <p>Clientes Satisfeitos</p>
+                </div>
+                <div class="col-md-4">
+                    <h1>200+</h1>
+                    <p>Clientes Satisfeitos</p>
+                </div>
+                <div class="col-md-4">
+                    <h1>200+</h1>
+                    <p>Clientes Satisfeitos</p>
+                </div>
+            </div>
+            <div class="row opiniao">
+                <h1>OPINIÃO</h1>
+                <p>O que falam sobre nós...</p>
+                <div class="col-md-6 mx-auto teste">
+                    <p class="testemunho">teste</p>
+                </div>
+                <div class="col-md-6 mx-auto teste">
+                    <p class="testemunho">teste</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5" id="equipa">
+        <div class="container p-5 membros">
+            <h2 class="titulo-principal">CONHECE A NOSSA EQUIPA</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="/imgs/membro2.png" class="thumb-membro">
+                    <p class="nome">Mariana araújo</p>
+                    <p class="funcao">COORDENADORA DE EVENTOS</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="/imgs/membro3.png" class="thumb-membro">
+                    <p class="nome">Mariana araújo</p>
+                    <p class="funcao">COORDENADORA DE EVENTOS</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="/imgs/membro4.png" class="thumb-membro">
+                    <p class="nome">Mariana araújo</p>
+                    <p class="funcao">COORDENADORA DE EVENTOS</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="/imgs/membro2.png" class="thumb-membro">
+                    <p class="nome">Mariana araújo</p>
+                    <p class="funcao">COORDENADORA DE EVENTOS</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="/imgs/membro3.png" class="thumb-membro">
+                    <p class="nome">Mariana araújo</p>
+                    <p class="funcao">COORDENADORA DE EVENTOS</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="/imgs/membro4.png" class="thumb-membro">
+                    <p class="nome">Mariana araújo</p>
+                    <p class="funcao">COORDENADORA DE EVENTOS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid p-5">
+            <p>footer</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
