@@ -382,3 +382,18 @@ color: #474D4B;
 footer{
     background-color: #252525;
 }
+
+/* Página de atividades */
+
+.fotoinicial{
+	height: 75vh;
+	background-image: url(../imgs/canyoning_geres_arado_sup_4.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+	position: relative;
+    text-align: center;
+    margin-left: 0px;
+    padding-top: 18%;
+    font-family: 'Sansation';
+}
