@@ -387,13 +387,30 @@ footer{
 
 .fotoinicial{
 	height: 75vh;
-	background-image: url(../imgs/canyoning_geres_arado_sup_4.jpg);
+	background-image: url(../imgs/canoying.jpg);
     background-size: cover;
     background-position: center;
     color: #fff;
 	position: relative;
-    text-align: center;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
     margin-left: 0px;
     padding-top: 18%;
     font-family: 'Sansation';
+	line-height: 25px;
+}
+
+.titulo-inicial{
+	font-family: 'Sansation';
+	font-style: normal;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 15px;
+}
+
+.imagem-des{
+	height: 500px;
+	width: auto;
+
 }
