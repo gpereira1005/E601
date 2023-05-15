@@ -103,7 +103,6 @@
 	top: -5px;
 }
 
-
 .titulo-principal{
     font-family: 'Sansation';
     font-style: normal;
@@ -255,7 +254,7 @@ a.thumbnail img {
 
 
 .dados{
-	padding: 50px;
+	padding: 30px;
 }
 
 .dados h1{
@@ -278,63 +277,91 @@ a.thumbnail img {
 	color: #68778D;
 }
 
+#indicadores .titulo{
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 56px;
+	text-align: center;
+	letter-spacing: 0.24px;
+	color: #3C4A5B;
+}
+
+#indicadores .subtitulo{
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 62px;
+	text-align: center;
+	letter-spacing: 1.25979px;
+	color: #3C4A5B;
+}
+
 .opiniao h1{
 	font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 33px;
-text-align: center;
-letter-spacing: 2px;
-text-transform: uppercase;
-color: #474D4B;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 33px;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #474D4B;
+}
+
+.opiniao h4{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 38px;
+	margin: 15px;
 }
 
 
-.teste{
-
+.caixa{
 	position: relative;
 	width: 395px;
 	height: 241px;
 	background: #FDFDFD;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
 	border-radius: 15px;
+	margin-top: 25px;
 }
 
-.img-test{
-	position: relative;
-	width: 300px;
-    height: 284px;
-	margin-left: -50px;
-	margin-top: -40px;
+.perfil{
+  	margin-left: 20px; 
+	margin-top: 20px;
+  	width: 60px;
+  	height: auto;
 }
 
+.info{
+	text-align: left;
+	margin-top: 30px;
+}
 
-.card-img {
-	width: 100%;
-	height: auto;
-	object-fit: cover;
-  }
-  
-  .card-body {
-	padding: 1rem;
-  }
-  
-  .card-title {
-	margin-top: 0;
-  }
-  
-  .card-subtitle {
-	font-size: 0.9rem;
-  }
-  
-  .card-text {
-	margin-bottom: 0;
-  }
-  
+.info h4{
+	font-family: 'Barlow';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 25px;
+}
 
+.info p{
+	font-family: 'Barlow';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 24px;
+}
 
 .testemunho{
+	width: 80%;
+	margin-top: 15px;
 	font-family: 'Barlow';
 	font-style: normal;
 	font-weight: 500;
@@ -342,6 +369,16 @@ color: #474D4B;
 	line-height: 23px;
 	color: #464255;
 }
+
+.img-test{
+	position: absolute;
+	top: -40px; 
+	left: 245px; 
+  	width: 250px;
+	height: auto;
+}
+
+
 
 #equipa{
     background-color: #fff;
@@ -352,7 +389,7 @@ color: #474D4B;
 	width: 40%;
 }
 
-.membros .nome{
+#equipa .nome{
 	font-family: 'Sansation';
 	font-style: normal;
 	font-weight: 700;
@@ -366,7 +403,7 @@ color: #474D4B;
 	color: #434040;
 }
 
-.membros .funcao{
+#equipa .funcao{
 	font-family: 'Sansation';
 	font-style: italic;
 	font-weight: 700;
