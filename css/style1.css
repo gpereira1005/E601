@@ -6,7 +6,7 @@
 }
 
 .detel {
-	margin-left: 6%;
+	margin-left: 5.5%;
 	margin-top: 13%;
 }
 
@@ -30,8 +30,8 @@
 	letter-spacing: 1.1px;
 }
 
-.nome form input {
-	width: 30%;
+.nome input {
+	width: 42%;
 	height: 20px;
 	padding: 12px 20px;
 	box-sizing: border-box;
@@ -40,7 +40,7 @@
 }
 
 .sobrenome {
-	margin-left: 70%;
+	margin-left: 76%;
 	margin-top: -5%;
 	font-family: 'Sansation Light';
 	font-style: normal;
@@ -50,8 +50,8 @@
 	letter-spacing: 1.1px;
 }
 
-.sobrenome form input {
-	width: 45%;
+.sobrenome input {
+	width: 81%;
 	height: 20px;
 	padding: 12px 20px;
 	box-sizing: border-box;
@@ -70,8 +70,8 @@
 	letter-spacing: 1.1px;
 }
 
-.email form input {
-	width: 63%;
+.email input {
+	width: 90%;
 	height: 20px;
 	padding: 12px 20px;
 	box-sizing: border-box;
@@ -90,8 +90,8 @@
 	letter-spacing: 1.1px;
 }
 
-.assunto form input {
-	width: 63%;
+.assunto input {
+	width: 90%;
 	height: 20px;
 	padding: 12px 20px;
 	box-sizing: border-box;
@@ -110,8 +110,8 @@
 	letter-spacing: 1.1px;
 }
 
-.mensagem form input[type=text] {
-	width: 63%;
+.mensagem input[type=text] {
+	width: 90%;
 	height: 120px;
 	padding: 12px 20px;
 	box-sizing: border-box;
@@ -133,6 +133,31 @@
 	background-color: #272727;
 	resize: none;
 	border-color: #272727;
+}
+
+.iconYT {
+	margin-top: 2%;
+	margin-left: 215px;
+}
+
+.iconTT {
+	margin-top: -2%;
+	margin-left: 255px;
+} 
+
+.iconLID {
+	margin-top: -2%;
+	margin-left: 290px;
+}
+
+.iconINST {
+	margin-top: -1.9%;
+	margin-left: 360px;
+}
+
+.iconFB {
+	margin-top: -2%;
+	margin-left: 325px;
 }
 
 .titulo-principal {
