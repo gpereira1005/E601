@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
   <meta charset="UTF-8">
   <title>contacto</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"> <!--CDN do bootsrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <!--CDN do bootsrap-->
   <link rel="stylesheet" href="css/style1.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"> <!--CDN de icons bootsrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <!--CDN de icons bootsrap-->
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-main">
     <div class="container-fluid">
-      <a class="navbar-brand" href=""><img src="imgs/radical_logo_nb.png" style="width: 20%; margin-left: 40px;"></a> <!--Melhorar isto-->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href=""><img src="imgs/radical_logo_nb.png" style="width: 20%; margin-left: 40px;"></a>
+      <!--Melhorar isto-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -41,46 +47,80 @@
       </div>
     </div>
   </nav>
-<div class="detel">
+  <div class="detel">
     <h1>ENTRA EM CONTACTO CONNOSCO!</h1>
-</div>
-<div class="mapa">
-  <a class="mapa" href=""><img src="imgs/mapa.png" style="width: 45%; margin-left: 5%; margin-top: 90px"></a>
-</div>
-<div class="nome">
-  <form>
-    <label for="name">Nome*</label><br>
-    <input type="text" id="name" name="name"><br>
-  </form>
-</div>
-<div class="sobrenome">
-  <form>
-    <label for="lname">Sobrenome*</label><br>
-    <input type="text" id="lname" name="lname"><br>
-  </form>
-</div>
-<div class="email">
-  <form>
-    <label for="email">Email*</label><br>
-    <input type="text" id="email" name="email"><br>
-  </form>
-</div>
-<div class="assunto">
-  <form>
-    <label for="assunto">Assunto*</label><br>
-    <input type="text" id="assunto" name="assunto"><br>
-  </form>
-</div>
-<div class="mensagem">
-  <form>
-    <label for="mensagem">Mensagem*</label><br>
-    <input type="text" id="mensagem" name="mensagem"><br>
-  </form>
-</div>
-<div class="botao">
-  <form>
-    <input type="button" value="Enviar">
-  </form>
-</div>
+  </div>
+  <div class="mapa">
+    <a class="mapa" href=""><img src="imgs/mapa.png" style="width: 45%; margin-left: 5%; margin-top: 90px"></a>
+  </div>
+  <div class="nome">
+    <form>
+      <label for="name">Nome*</label><br>
+      <input type="text" id="name" name="name"><br>
+    </form>
+  </div>
+  <div class="sobrenome">
+    <form>
+      <label for="lname">Sobrenome*</label><br>
+      <input type="text" id="lname" name="lname"><br>
+    </form>
+  </div>
+  <div class="email">
+    <form>
+      <label for="email">Email*</label><br>
+      <input type="text" id="email" name="email"><br>
+    </form>
+  </div>
+  <div class="assunto">
+    <form>
+      <label for="assunto">Assunto*</label><br>
+      <input type="text" id="assunto" name="assunto"><br>
+    </form>
+  </div>
+  <div class="mensagem">
+    <form>
+      <label for="mensagem">Mensagem*</label><br>
+      <input type="text" id="mensagem" name="mensagem"><br>
+    </form>
+  </div>
+  <div class="botao">
+    <form>
+      <input type="button" value="Enviar" id="enviar">
+    </form>
+  </div>
+
+  <script>
+    let listaContactos = localStorage.getItem("listaContactos");
+    if (listaContactos == null) {
+      let lista = []
+      localStorage.setItem("listaContactos", JSON.stringify(lista))
+    }
+
+    let form = document.querySelector(`#`); // select form
+    let formElements = form.elements; // get the elements in the form
+    const getFormData2 = () => {
+      let data = {};
+      for (const element of formElements) {
+        if (element.name.length > 0) {
+          data[element.name] = element.value;
+        }
+      }
+      return data;
+    };
+    submitButton.onclick = event => {
+      event.preventDefault();
+      data = getFormData2();
+      console.log(data);
+      SaveDataToLocalStorage(data);
+    }
+
+
+
+    /*document.getElementById('enviar').addEventListener('click', guardarDados());
+  
+    function guardarDados(){
+      console.log("Botão clicado")
+    }*/
+  </script>
 
 </body>

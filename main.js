@@ -3,7 +3,7 @@ let atividades = JSON.parse(localStorage.getItem("atividades"));
 atividades.forEach(atividade => { 
         let html = '<div class="col-md-4">'+
                         '<figure>'+
-                        '<a href="atividades.html?id='+atividade.id+'"><img src="'+atividade.imagem+'" class="img-fluid"></a>'+
+                        '<a href="atividades.html?id='+atividade.id+'"><img src="'+atividade.thumb+'" class="img-fluid"></a>'+
                             '<figcaption class="bg-dark text-light">Desde '+atividade.preco+' pax</figcaption>'+
                             '<p>'+atividade.nome+'</p>'+
                         '</figure>'+

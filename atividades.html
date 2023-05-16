@@ -51,7 +51,7 @@
       <div class="row">
 
         <p> PT | EN </p> 
-        <h1 id = "titulo">Cannoying</h1>
+        <h1 id = "categoria">Cannoying</h1>
         
       </div>
     </div>
@@ -62,14 +62,14 @@
 
   <div class="container p-5" id="descricao-titulo">
     <div class="inicio p-5">
-      <h2 class="titulo-inicial">Canyoning no Douro</h2>
-      <p class="texto-abaixo">Região: Parque Nacional Peneda-Gerês <br> Dificuldade: Difícil</p>
-      <img src="/imgs/canyoning_geres_arado_sup_4.jpg" class="imagem-des">
+      <h2 class="titulo-inicial" id="nome">Canyoning no Douro</h2>
+      <p class="texto-abaixo">Região: <span id="regiao">Parque Nacional Peneda-Gerês</span><br> Dificuldade: <span id="dificuldade">Difícil</span></p>
+      <img src="" class="imagem-des" id="imagem">
   </div>
 
   <div class="container-fluid p-5">
     <h6 class="titulodesc">Descrição:</h6> 
-    <p class="sobre-desc">
+    <p class="sobre-desc" id="descricao">
             Este percurso apresenta uma extensão de cerca de 1000 metros percorridos com recurso a 4 rapeis que variam
             entre os 6 e 40 metros de altura, caminhada pelo leito do rio, progressão aquática e pequenos saltos para a
             água. Localizado em pleno Parque Nacional Peneda Gerês, a uma hora e meia de automóvel do Porto, apresenta
@@ -78,19 +78,12 @@
     </p>
     
     <h6 class="titulodesc">Programa:</h6>
-    <p class="programa-desc">
-            8:00 - Pick up no local de alojamento (no caso de requerer transporte);<br>            
-            9:30 - Chegada / Ponto de encontro;<br>
-            9:40 - Briefing e entrega do equipamento;<br>
-            10:10 - Início da atividade;<br>
-            12:30 - Pequena paragem para reforço energético;<br>
-            16:00 - Final da descida;<br>
-            16:30 - Snack (opcional);<br>
-            18:10 - Drop off no local de alojamento (no caso de requerer transporte).<br>
+    <p class="programa-desc" id="programa">
+            
     </p>
 
     <h6 class="titulodesc">Este programa inclui:</h6>
-    <p class="programa-inc">
+    <p class="programa-inc" id="inclui">
       Transporte (quando solicitado) a partir do Grande Porto, Braga e Gerês, enquadramento técnico e acompanhamento permanente de monitores altamente qualificados, seguros em conformidade com a lei 
       (disponível para consulta), botas de canyoning (Adidas Hydro Lace), fato isotérmico de alta performance, meias
 de neoprene, capacete de segurança, arnês com proteção, longe dupla, descensor, luvas de neoprene (quando
@@ -100,7 +93,7 @@ vídeos da actividade.
     </p>
 
     <h6 class="titulodesc">Trazer:</h6>
-    <p class="programa-tra">
+    <p class="programa-tra" id="trazer">
       - Calção/fato de banho<br>
       - Toalha<br>
       - Snack (ou requerer por 5€ extra)<br>
@@ -109,7 +102,7 @@ vídeos da actividade.
     </p>
 
     <h6 class="titulodesc">Preço por pessoa com transporte incluido:</h6>
-    <p class="programa-preço">
+    <p class="programa-preço" id="preco">
       2 a 5 participantes - 75€ <br>
       mais de 5 participantes - 65€<br>
       Preço por pessoa com transporte próprio:<br>
@@ -120,19 +113,12 @@ vídeos da actividade.
     </p>
 
     <h6 class="titulodesc">Extra:</h6>
-    <p class="programa-snack">
+    <p class="programa-snack" id="extra">
       Snack - 5€
     </p>
 
     <button class="btn btn-success px-3">Marque já</button>
 
   </div>
-
-
-  <p id="categoria"></p>
-  <p id="titulo"></p>
-  <img src="" id="imagem">
-  <p id="preco"></p>
-  <p id="descricao"></p>
   <script src="getAtividade.js"></script>
 </body>

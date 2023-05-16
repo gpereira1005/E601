@@ -416,9 +416,90 @@ a.thumbnail img {
 	color: #767B80;
 }
 
-footer{
+.footer-info{
     background-color: #252525;
+	color: white;
+	padding: 30px 130px 0px;
 }
+
+.links{
+	color: white; 
+	text-align: center;
+	padding-bottom: 30px;
+	color: #9D9D9D;
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 1px;
+	
+}
+
+.noticias p{
+	padding-top: 5px;
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 31px;
+	letter-spacing: 0.72016px;
+}
+
+.contactos{
+	padding: 40px 0px 40px;
+}
+
+.contactos h4{
+	margin-bottom: 5px; 
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+	letter-spacing: 0.28px;
+	text-transform: capitalize;
+	color: #9D9D9D;
+}
+
+.contactos p{
+	margin: 0px;
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.28px;
+
+}
+
+.footer-radical{
+	position: relative;
+	background-color: #464646;
+	padding: 40px;
+}
+
+.footer-radical img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 175px;
+	width: 120px;
+	height: 120px;
+	padding: 20px;
+}
+
+.footer-radical p{
+	color: white;
+	margin: 0; 
+	text-align: center;
+}
+
+
+
+
+
 
 /* Página de atividades */
 

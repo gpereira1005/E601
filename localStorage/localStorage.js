@@ -1,50 +1,119 @@
+/*
+* Inluir menos coisas (meter so as mais importantes)
+* Meter preço por pessoa (assim podemos meter ao fazer uma marcação ele calcular o preço com base no nº pessoas)
+*/
+
+
 let listaAtividades = [{
   "id": "0",
   "categoria": "aereos",
-  "imagem": "/imgs/inicio1.png",
-  "nome": "Nome atividade",
-  "preco": "10", 
-  "descricao": "descriçao da atividade"
+  "imagem": "/imgs/canyoning_geres_arado_sup_4.jpg",
+  "thumb": "/imgs/inicio4.png",
+  "nome": "Cannoying no Douro",
+  "regiao": "Parque Nacional Peneda-Gerês",
+  "dificuldade": "Dificil", 
+  "descricao": "Este percurso apresenta uma extensão de cerca de 1000 metros percorridos com recurso a 4 rapeis que variam entre os 6 e 40 metros de altura, caminhada pelo leito do rio, progressão aquática e pequenos saltos para a água. Localizado em pleno Parque Nacional Peneda Gerês, a uma hora e meia de automóvel do Porto, apresenta um fantástico enquadramento natural e paisagístico e grandes lagoas verdes de água límpida. Recomendamos experiência anterior em canyoning ou rapel.",
+  "programa": [
+    "8:00 - Pick up no local de alojamento (no caso de requerer transporte)", 
+    "9:30 - Chegada / Ponto de encontro;", 
+    "9:40 - Briefing e entrega do equipamento;",
+    "10:10 - Início da atividade;",
+    "12:30 - Pequena paragem para reforço energético;",
+    "16:00 - Final da descida;",
+    "16:30 - Snack (opcional);", 
+    "18:10 - Drop off no local de alojamento (no caso de requerer transporte)."],
+  "inclui": ["Transporte (quando solicitado) a partir do Grande Porto, Braga e Gerês,", 
+    "enquadramento técnico e acompanhamento permanente de monitores altamente qualificados", 
+    "seguros em conformidade com a lei (disponível para consulta)", 
+    "botas de canyoning (Adidas Hydro Lace)", 
+    "fato isotérmico de alta performance", 
+    "meias de neoprene", 
+    "capacete de segurança", 
+    "arnês com proteção", 
+    "longe dupla", 
+    "descensor", 
+    "luvas de neoprene (quando necessário)", 
+    "sacos de transporte", 
+    "bidons estanque", 
+    "colete salva-vidas (quando necessário)",
+    "oferta de fotos e vídeos da actividade."],
+  "trazer": ["Calção/fato de banho", 
+    "Toalha",
+    "Snack (ou requerer por 5€ extra)",
+    "Água"],
+  "preco": ["2 a 5 participantes - 75€",
+    "mais de 5 participantes - 65€"],
+  "extra": "Snack - 5€"
 },
 {
   "id": "1",
   "categoria": "aereos",
   "imagem": "/imgs/inicio1.png",
-  "nome": "Nome atividade 2",
-  "preco": "15", 
-  "descricao": "descriçao da atividade"
+  "nome": "Nome atividade",
+  "regiao": "Parque Nacional Peneda-Gerês",
+  "dificuldade": "Dificil", 
+  "descricao": "descriçao da atividade",
+  "programa": "programa da atividade",
+  "inclui": "a atividade inclui...",
+  "trazer": "trazer..",
+  "preco": "preço...",
+  "extra": ""
 },
 {
   "id": "2",
   "categoria": "aereos",
-  "imagem": "/imgs/inicio2.png",
-  "nome": "Nome atividade 3",
-  "preco": "17", 
-  "descricao": "descriçao da atividade"
+  "imagem": "/imgs/inicio1.png",
+  "nome": "Nome atividade",
+  "regiao": "Parque Nacional Peneda-Gerês",
+  "dificuldade": "Dificil", 
+  "descricao": "descriçao da atividade",
+  "programa": "programa da atividade",
+  "inclui": "a atividade inclui...",
+  "trazer": "trazer..",
+  "preco": "preço...",
+  "extra": ""
 },
 {
   "id": "3",
-  "categoria": "terrestres",
+  "categoria": "aereos",
   "imagem": "/imgs/inicio1.png",
-  "nome": "Nome atividade 4",
-  "preco": "125", 
-  "descricao": "descriçao da atividade"
+  "nome": "Nome atividade",
+  "regiao": "Parque Nacional Peneda-Gerês",
+  "dificuldade": "Dificil", 
+  "descricao": "descriçao da atividade",
+  "programa": "programa da atividade",
+  "inclui": "a atividade inclui...",
+  "trazer": "trazer..",
+  "preco": "preço...",
+  "extra": ""
 },
 {
   "id": "4",
-  "categoria": "terrestres",
-  "imagem": "/imgs/inicio2.png",
-  "nome": "Nome atividade 5",
-  "preco": "10", 
-  "descricao": "descriçao da atividade"
+  "categoria": "aereos",
+  "imagem": "/imgs/inicio1.png",
+  "nome": "Nome atividade",
+  "regiao": "Parque Nacional Peneda-Gerês",
+  "dificuldade": "Dificil", 
+  "descricao": "descriçao da atividade",
+  "programa": "programa da atividade",
+  "inclui": "a atividade inclui...",
+  "trazer": "trazer..",
+  "preco": "preço...",
+  "extra": ""
 },
 {
   "id": "5",
-  "categoria": "maritimos",
+  "categoria": "aereos",
   "imagem": "/imgs/inicio1.png",
-  "nome": "Nome atividade 6",
-  "preco": "10", 
-  "descricao": "descriçao da atividade"
+  "nome": "Nome atividade",
+  "regiao": "Parque Nacional Peneda-Gerês",
+  "dificuldade": "Dificil", 
+  "descricao": "descriçao da atividade",
+  "programa": "programa da atividade",
+  "inclui": "a atividade inclui...",
+  "trazer": "trazer..",
+  "preco": "preço...",
+  "extra": ""
 }
 ]
 
