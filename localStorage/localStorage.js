@@ -7,8 +7,8 @@
 let listaAtividades = [{
   "id": "0",
   "categoria": "cannoying",
-  "imagem": "../imgs/canyoning_geres_arado_sup_4.jpg",
-  "thumb": "../imgs/inicio4.png",
+  "imagem": "imgs/canyoning_geres_arado_sup_4.jpg",
+  "thumb": "imgs/inicio4.png",
   "nome": "Cannoying no Douro",
   "regiao": "Parque Nacional Peneda-Gerês",
   "dificuldade": "Dificil", 
