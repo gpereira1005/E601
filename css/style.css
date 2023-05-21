@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
 
+/*Index - Pagina Principal*/
 .background-section {
     height: 100vh;
     background-image: url('../imgs/inicio4.png');
@@ -395,11 +396,8 @@ a.thumbnail img {
 	font-weight: 700;
 	font-size: 12px;
 	line-height: 16px;
-	/* identical to box height, or 133% */
-
 	text-align: center;
 	text-transform: uppercase;
-
 	color: #434040;
 }
 
@@ -409,10 +407,7 @@ a.thumbnail img {
 	font-weight: 700;
 	font-size: 12px;
 	line-height: 16px;
-	/* or 133% */
-
 	text-align: center;
-
 	color: #767B80;
 }
 
