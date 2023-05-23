@@ -153,10 +153,16 @@
     </div>
 
 
-    <p> <b>Data de reserva* </b></p>
-    <p> <b>Hora de início* </b></p>   
-    <p> <b>Hora do fim* </b> </p>
-
+    <form>
+      <label for="hora-inicio">Escolha a data para a reserva*: </label>
+      <input type="date" id="diaa" name="diaa">
+      <p></p>
+      <label for="hora-inicio">Escolha o horário da reserva (aberto das 09:00 às 18:00)*: </label>
+      <label for="hora-inicio">Início: </label>
+      <input type="time" id="hora-inicio" name="hora-inicio" min="09:00" max="18:00">
+      <label for="hora-fim">Fim: </label>
+      <input type="time" id="hora-fim" name="hora-fim" min="09:00" max="18:00">
+    </form>
 
     <div>
       <span> <b>Continuidade* </b></span>
