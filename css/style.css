@@ -5,24 +5,24 @@
 
 /*Index - Pagina Principal*/
 .background-section {
-    height: 100vh;
-    background-image: url('../imgs/inicio4.png');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+	height: 100vh;
+	background-image: url('../imgs/inicio4.png');
+	background-size: cover;
+	background-position: center;
+	color: #fff;
 }
 
-.banner{
-    position: relative;
-    text-align: center;
-    margin-left: 0px;
-    padding-top: 18%;
-    padding-left: 10%;
-    font-family: 'Sansation';
+.banner {
+	position: relative;
+	text-align: center;
+	margin-left: 0px;
+	padding-top: 18%;
+	padding-left: 10%;
+	font-family: 'Sansation';
 }
 
 .navbar-main {
-    background-color: rgb(37, 37, 37, 0.8);
+	background-color: rgb(37, 37, 37, 0.8);
 }
 
 .feature-block {
@@ -31,9 +31,9 @@
 	text-align: center;
 	font-size: 1em;
 	position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 }
 
 .feature-block.hover .swipe.left {
@@ -57,8 +57,10 @@
 }
 
 .feature-block .holder {
-	overflow-x: auto; /* 1 */
-	-webkit-overflow-scrolling: touch; /* 2 */
+	overflow-x: auto;
+	/* 1 */
+	-webkit-overflow-scrolling: touch;
+	/* 2 */
 }
 
 .feature-block ul {
@@ -104,24 +106,24 @@
 	top: -5px;
 }
 
-.titulo-principal{
-    font-family: 'Sansation';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    text-align: center;
+.titulo-principal {
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	text-align: center;
 }
 
-.titulo-secundario{
-    font-family: 'Sansation Light';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 38px;
-    text-align: center;
-    letter-spacing: 1.2px;
+.titulo-secundario {
+	font-family: 'Sansation Light';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 38px;
+	text-align: center;
+	letter-spacing: 1.2px;
 
-    color: #5C5E62;
+	color: #5C5E62;
 }
 
 .seperator {
@@ -152,21 +154,21 @@ a.thumbnail img {
 	vertical-align: middle;
 	width: 100%;
 	padding: 30px 50px 15px;
-    
+
 }
 
 .adventure-holder .text-block .sobre-titulo {
-    font-family: 'Sansation';
-    font-weight: 400;
-    font-size: 30px;
+	font-family: 'Sansation';
+	font-weight: 400;
+	font-size: 30px;
 }
 
-.adventure-holder .text-block .sobre-desc{
-    font-family: 'Sansation Light';
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 36px;
-    text-align: justify;
+.adventure-holder .text-block .sobre-desc {
+	font-family: 'Sansation Light';
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 36px;
+	text-align: justify;
 }
 
 
@@ -207,58 +209,58 @@ a.thumbnail img {
 }
 
 
-#atividades{
-    background-color: #FAFAFA;
+#atividades {
+	background-color: #FAFAFA;
 }
 
-.categoria{
-    width: 100%;
-    background-color: #272727;
-    color: white;
+.categoria {
+	width: 100%;
+	background-color: #272727;
+	color: white;
 }
 
-.categoria h1{
-    font-family: 'Sansation';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    text-align: center;
-    padding: 20px;
+.categoria h1 {
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	text-align: center;
+	padding: 20px;
 }
 
-.atividade{
-    padding-top: 20px;
+.atividade {
+	padding-top: 20px;
 }
 
-.atividade figcaption{
-    padding: 7px;
-    padding-left: 10px;
-    font-family: 'Sansation';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
+.atividade figcaption {
+	padding: 7px;
+	padding-left: 10px;
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
 }
 
-.atividade p{
-    text-align: center;
-    padding: 10px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
+.atividade p {
+	text-align: center;
+	padding: 10px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
 }
 
-#indicadores{
-    background-color: #EDEEEF;
-    text-align: center;
+#indicadores {
+	background-color: #EDEEEF;
+	text-align: center;
 }
 
 
-.dados{
+.dados {
 	padding: 30px;
 }
 
-.dados h1{
+.dados h1 {
 	font-family: 'Sansation';
 	font-style: normal;
 	font-weight: 400;
@@ -268,7 +270,7 @@ a.thumbnail img {
 	text-align: center;
 }
 
-.dados p{
+.dados p {
 	font-family: 'Sansation';
 	font-style: normal;
 	font-weight: 400;
@@ -278,7 +280,7 @@ a.thumbnail img {
 	color: #68778D;
 }
 
-#indicadores .titulo{
+#indicadores .titulo {
 	font-family: 'Sansation';
 	font-style: normal;
 	font-weight: 700;
@@ -289,7 +291,7 @@ a.thumbnail img {
 	color: #3C4A5B;
 }
 
-#indicadores .subtitulo{
+#indicadores .subtitulo {
 	font-family: 'Sansation';
 	font-style: normal;
 	font-weight: 400;
@@ -300,7 +302,7 @@ a.thumbnail img {
 	color: #3C4A5B;
 }
 
-.opiniao h1{
+.opiniao h1 {
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 400;
@@ -312,7 +314,7 @@ a.thumbnail img {
 	color: #474D4B;
 }
 
-.opiniao h4{
+.opiniao h4 {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
@@ -322,7 +324,7 @@ a.thumbnail img {
 }
 
 
-.caixa{
+.caixa {
 	position: relative;
 	width: 395px;
 	height: 241px;
@@ -332,19 +334,19 @@ a.thumbnail img {
 	margin-top: 25px;
 }
 
-.perfil{
-  	margin-left: 20px; 
+.perfil {
+	margin-left: 20px;
 	margin-top: 20px;
-  	width: 60px;
-  	height: auto;
+	width: 60px;
+	height: auto;
 }
 
-.info{
+.info {
 	text-align: left;
 	margin-top: 30px;
 }
 
-.info h4{
+.info h4 {
 	font-family: 'Barlow';
 	font-style: normal;
 	font-weight: 500;
@@ -352,7 +354,7 @@ a.thumbnail img {
 	line-height: 25px;
 }
 
-.info p{
+.info p {
 	font-family: 'Barlow';
 	font-style: normal;
 	font-weight: 500;
@@ -360,7 +362,7 @@ a.thumbnail img {
 	line-height: 24px;
 }
 
-.testemunho{
+.testemunho {
 	width: 80%;
 	margin-top: 15px;
 	font-family: 'Barlow';
@@ -371,26 +373,26 @@ a.thumbnail img {
 	color: #464255;
 }
 
-.img-test{
+.img-test {
 	position: absolute;
-	top: -40px; 
-	left: 245px; 
-  	width: 250px;
+	top: -40px;
+	left: 245px;
+	width: 250px;
 	height: auto;
 }
 
 
 
-#equipa{
-    background-color: #fff;
-    text-align: center;
+#equipa {
+	background-color: #fff;
+	text-align: center;
 }
 
-.thumb-membro{
+.thumb-membro {
 	width: 40%;
 }
 
-#equipa .nome{
+#equipa .nome {
 	font-family: 'Sansation';
 	font-style: normal;
 	font-weight: 700;
@@ -401,7 +403,7 @@ a.thumbnail img {
 	color: #434040;
 }
 
-#equipa .funcao{
+#equipa .funcao {
 	font-family: 'Sansation';
 	font-style: italic;
 	font-weight: 700;
@@ -411,14 +413,14 @@ a.thumbnail img {
 	color: #767B80;
 }
 
-.footer-info{
-    background-color: #252525;
+.footer-info {
+	background-color: #252525;
 	color: white;
 	padding: 30px 130px 0px;
 }
 
-.links{
-	color: white; 
+.links {
+	color: white;
 	text-align: center;
 	padding-bottom: 30px;
 	color: #9D9D9D;
@@ -429,10 +431,10 @@ a.thumbnail img {
 	line-height: 24px;
 	text-align: center;
 	letter-spacing: 1px;
-	
+
 }
 
-.noticias p{
+.noticias p {
 	padding-top: 5px;
 	font-family: 'Sansation';
 	font-style: normal;
@@ -442,12 +444,12 @@ a.thumbnail img {
 	letter-spacing: 0.72016px;
 }
 
-.contactos{
+.contactos {
 	padding: 40px 0px 40px;
 }
 
-.contactos h4{
-	margin-bottom: 5px; 
+.contactos h4 {
+	margin-bottom: 5px;
 	font-family: 'Sansation';
 	font-style: normal;
 	font-weight: 700;
@@ -458,7 +460,7 @@ a.thumbnail img {
 	color: #9D9D9D;
 }
 
-.contactos p{
+.contactos p {
 	margin: 0px;
 	font-family: 'Sansation';
 	font-style: normal;
@@ -469,13 +471,13 @@ a.thumbnail img {
 
 }
 
-.footer-radical{
+.footer-radical {
 	position: relative;
 	background-color: #464646;
 	padding: 40px;
 }
 
-.footer-radical img{
+.footer-radical img {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -485,9 +487,9 @@ a.thumbnail img {
 	padding: 20px;
 }
 
-.footer-radical p{
+.footer-radical p {
 	color: white;
-	margin: 0; 
+	margin: 0;
 	text-align: center;
 }
 
@@ -498,23 +500,23 @@ a.thumbnail img {
 
 /* Página de atividades */
 
-.fotoinicial{
+.fotoinicial {
 	height: 75vh;
 	background-image: url(../imgs/canoying.jpg);
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
 	position: relative;
 	text-align: center;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-    margin-left: 0px;
-    padding-top: 18%;
-    font-family: 'Sansation';
+	margin-left: 0px;
+	padding-top: 18%;
+	font-family: 'Sansation';
 	line-height: 25px;
 }
 
-.titulo-inicial{
+.titulo-inicial {
 	font-family: 'Sansation';
 	font-style: normal;
 	font-size: 25px;
@@ -522,14 +524,112 @@ a.thumbnail img {
 	line-height: 15px;
 }
 
-.imagem-des{
+.imagem-des {
 	height: 500px;
 	width: auto;
 
 }
 
-.btn{
+.btn {
 	background-color: #707070;
 	border: none;
 }
+
+
+/* Página de login */
+.background {
+	background-image: url("../imgs/login.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.login {
+	color: #000;
+	padding-top: 100px;
+}
+
+.caixa-login {
+	margin: 60px 80px 50px 80px;
+	padding: 50px 80px 50px 80px;
+	position: relative;
+	background: rgba(217, 217, 217, 0.7);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+	border-radius: 15px;
+	width: 45%;
+	text-align: center;
+}
+
+.caixa-login h1 {
+	font-family: 'Sansation';
+	-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 34px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+
+}
+
+#form-login {
+	padding: 45px 50px 10px 50px;
+	text-align: center;
+
+}
+
+.imp-login{
+	background: #FFFFFF;
+	border-radius: 10px;
+
+}
+
+.entrar {
+	margin-top: 10px;
+	padding: 10px 30px 10px 30px;
+	background: rgba(0, 0, 0, 0.975);
+	border: 1px solid #272727;
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 13px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.criar {
+	margin-top: 10px;
+	padding: 10px 30px 10px 30px;
+	background: rgba(0, 0, 0, 0.975);
+	border: 1px solid #272727;
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 13px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.caixa-login p {
+	margin-top: 20px;
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 13px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.caixa-login .seperator {
+	border-bottom: 1px solid #766B6B;
+	;
+}
+
 
