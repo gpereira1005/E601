@@ -103,7 +103,15 @@
           <label for="inputState">Modalidade</label>
           <select id="inputState" class="form-control">
             <option selected>Escolha a modalidade</option>
-            <option>...</option>
+            <option>Rapel</option>
+            <option>Parapente</option>
+            <option>Slide</option>
+            <option>Canoagem</option>
+            <option>cannyoning</option>
+            <option>Flyboard</option>
+            <option>Salto de paraquedas</option>
+            <option>Passeios TT</option>
+            <option>Paintball</option>
           </select>
         </div>
       </div>
@@ -143,17 +151,20 @@
         <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
       </div>
     </form>
-    <input type="text" name="campo1" />
-    <input type="submit" value="Enviar" />
+    
   </form>
 
-  <div id="formContainer">
-    <form id="form2">
+  <form id="form2" style="display: none;">
     <h2><b>RESPONSÁVEL PELA RESERVA</b> </h2>
     <form>
       <div class="form-group">
         <label for="nome"> <b>Nome* </b></label>
         <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome">
+      </div>
+
+      <div class="form-group">
+        <label for="utente"> <b>Nº de Utente </b></label>
+        <input type="text" class="form-control" id="utente" placeholder="Digite o seu número de utente">
       </div>
 
       <div class="form-group">
@@ -169,12 +180,10 @@
       <label> <b> Data de Nascimento </b></label>
       <input type="date" class="form-control" id="dob" />
     </form>
-    <input type="text" name="campo2" />
-    <input type="submit" value="Enviar" />
+    
   </form>
 
-  <div id="formContainer">
-    <form id="form3">
+  <form id="form3" style="display: none;">
     <h2><b>DADOS PARA FATURAÇÃO </b></h2>
 
     <form>
@@ -224,11 +233,11 @@
           ULisboa
           a guardar o seu sigilo </b> </p>
     </form>
-    <input type="text" name="campo3" />
-    <input type="submit" value="Enviar" />
+    
   </form>
+  </div>
 
-    <button type="submit" class="btn btn-primary"> <b> Enviar </b></button>
+    <button type="submit" class="btn btn-primary"> <b> Seguinte </b></button>
   </div>
 
 
