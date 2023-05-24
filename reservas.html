@@ -1,266 +1,260 @@
 <!DOCTYPE html>
 <html>
-   <head>
 
-    <title> Reservas </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<head>
 
-    <style>
-      body {
-        margin-top: 30px;
-    
-      }
+  <title> Reservas </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="js/loadNavbar.js"></script>
+
+  <style>
+    body {
+      margin-top: 30px;
+      overflow-x: hidden;
+
+    }
+
+    .reservas h1 {
+      font-family: 'Sansation';
+      color: #3C4A5B;
+      padding-bottom: 30px;
+    }
+
+    .reservas h2 {
+      font-family: 'Sansation';
+      color: #3C4A5B;
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+
+    .reservas span {
+      font-family: 'Sansation';
+      color: #3C4A5B;
+
+    }
+
+    .reservas p {
+      font-family: 'Sansation';
+      color: #3C4A5B;
+
+    }
+
+    .reservas label {
+      font-family: 'Sansation';
+      color: #3C4A5B;
+
+    }
+
+    .header {
+      position: relative;
+      width: 100%;
+      height: 75%;
+      color: white;
+    }
+
+    .header video {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+
+    .banner {
+      position: relative;
+      text-align: center;
+      font-family: 'Sansation';
+      padding: 150px;
+      color: white;
+      margin-left: 50%;
+    }
+
+    .reservas .row {
+      padding: 10px;
+    }
+  </style>
 
 
-      h1{
-        font-family: 'Sansation';
-        color: #3C4A5B;
-        margin-top: 60px;
-        margin-left: 30px;
-        
-      }
+</head>
 
-      h2{
-        font-family: 'Sansation';
-        color: #3C4A5B;
-        margin-top: 60px;
-        margin-left: 30px;
-        
-      }
+<body>
+  <div class="header">
+    <video src="imgs/parapente-reservas.mp4" width="100%" height="50%" autoplay loop muted></video>
+    <div class="banner">
+      <h1>Reserva de Atividades</h1>
+      <p>Aventuras à distância de um clique
+      <p>
+    </div>
+  </div>
+  </div>
+  <div class="container p-5 reservas">
 
-      span{
-        font-family: 'Sansation';
-        color: #3C4A5B;
-        margin-left: 30px;
-      
-      }
+    <h1><b>PEDIDOS DE RESERVAS DE ESPAÇO</b></h1>
 
-      p{
-        font-family: 'Sansation';
-        color: #3C4A5B;
-        margin-left: 30px;
-        
-      }
-
-      label{
-        font-family: 'Sansation';
-        color: #3C4A5B;
-        margin-left: 30px;
-        
-      }
-
-      
-
-
-
-
-    </style>
-    
-
-   </head>
-
-   <body>
-
-
-
-
-
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-main">
-    <div class="container-fluid">
-      <a class="navbar-brand" href=""><img src="imgs/radical_logo_nb.png" style="width: 20%; margin-left: 40px;"></a>
-      <!--Melhorar isto-->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#pagina-inicial">Página Inicial</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#sobre-nos">Sobre Nós</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#atividades">Atividades</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#equipa">Equipa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#reservas">Reservas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contactos">Contactos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#login">Login</a>
-          </li>
-        </ul>
+    <div class="row">
+      <div class="col-md-2">
+        <span> <b> Instalações* </b> </span>
+      </div>
+      <div class="col-md-10">
+        <button class="btn btn-button dropdown-toggle" type="button" data-toggle="dropdown">
+          -Selecione uma opção-
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Opção 1</a>
+          <a class="dropdown-item" href="#">Opção 2</a>
+          <a class="dropdown-item" href="#">Opção 3</a>
+        </div>
       </div>
     </div>
-  </nav>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-      <img src="C:\Users\marta\OneDrive\Ambiente de Trabalho\TESTE_PW\reservas1.png" alt="Logo" style="width: 100%;">
-    </a>
-    
-  </nav>
-
-
-    <h1> <b> PEDIDOS DE RESERVAS DE ESPAÇO </b></h1>
-
-    <div  class="mb-4">
-      <span> <b> Instalações* </b> </span>
-      <button class="btn btn-button dropdown-toggle" type="button" data-toggle="dropdown">
-        -Selecione uma opção-
-      </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Opção 1</a>
-        <a class="dropdown-item" href="#">Opção 2</a>
-        <a class="dropdown-item" href="#">Opção 3</a>
+    <div class="row">
+      <div class="col-md-2">
+        <span> <b> Utente* </b> </span>
+      </div>
+      <div class="col-md-10">
+        <button class="btn btn-button dropdown-toggle" type="button" data-toggle="dropdown">
+          -Selecione uma opção-
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Opção 1</a>
+          <a class="dropdown-item" href="#">Opção 2</a>
+          <a class="dropdown-item" href="#">Opção 3</a>
+        </div>
       </div>
     </div>
-  
-    <div class="dropdown">
-      <span> <b> Utente* </b>  </span>
-      <button class="btn btn-button dropdown-toggle" type="button" data-toggle="dropdown">
-        -Selecione uma opção-
-      </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Opção 1</a>
-        <a class="dropdown-item" href="#">Opção 2</a>
-        <a class="dropdown-item" href="#">Opção 3</a>
-      </div>
-    </div>
-
-
     <h2> <b> DADOS DA RESERVA </b> </h2>
-    
-    
-    <div class="mb-4">
-      <span> <b>Modalidade </b></span>
-      <button class="btn btn-button dropdown-toggle" type="button" data-toggle="dropdown">
-        -Nenhum-
-      </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Marítima</a>
-        <a class="dropdown-item" href="#">Terrestre</a>
-        <a class="dropdown-item" href="#">Aérea</a>
-      </div>
-    </div>
 
-
+    <!--Colocar cada parte como um form para ser mais facil recolher os dados-->
     <form>
-      <label for="hora-inicio">Escolha a data para a reserva*: </label>
-      <input type="date" id="diaa" name="diaa">
-      <p></p>
-      <label for="hora-inicio">Escolha o horário da reserva (aberto das 09:00 às 18:00)*: </label>
-      <label for="hora-inicio">Início: </label>
-      <input type="time" id="hora-inicio" name="hora-inicio" min="09:00" max="18:00">
-      <label for="hora-fim">Fim: </label>
-      <input type="time" id="hora-fim" name="hora-fim" min="09:00" max="18:00">
+      <div class="form-row">
+        <div class="form-group col">
+          <label for="inputState">Modalidade</label>
+          <select id="inputState" class="form-control">
+            <option selected>Escolha a modalidade</option>
+            <option>...</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Data da Reserva</label>
+        <input type="date" class="form-control" id="dob" />
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputAddress">Hora da Inicio</label>
+          <input type="time" class="form-control" id="dob" />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputAddress">Hora da Fim</label>
+          <input type="time" class="form-control" id="dob" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col">
+          <label for="inputState">Continuidade*: </label>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline1">Unica</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline2">Semanal</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline3">Mensal</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputState">Observações: </label>
+        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+      </div>
     </form>
 
-    <div>
-      <span> <b>Continuidade* </b></span>
-      <label>
-        <input type="radio" name="continuidade" value="unica">
-        Única
-      </label>
-      <label>
-        <input type="radio" name="continuidade" value="semanal">
-        Semanal
-      </label>
-      <label>
-        <input type="radio" name="continuidade" value="mensal">
-        Mensal
-      </label>
-    </div>
+    <h2><b>RESPONSÁVEL PELA RESERVA</b> </h2>
+    <form>
+      <div class="form-group">
+        <label for="nome"> <b>Nome* </b></label>
+        <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome">
+      </div>
 
-    <label for="observacoes"> <b>Observações: </b></label>
-<textarea id="observacoes" rows="4" cols="100"></textarea>
+      <div class="form-group">
+        <label for="email"> <b>Email* </b> </label>
+        <input type="text" class="form-control" id="email" placeholder="Digite o seu email">
+      </div>
 
+      <div class="form-group">
+        <label for="telefone"> <b>Telefone* </b> </label>
+        <input type="text" class="form-control" id="telefone" placeholder="Digite o seu número de telefone">
+      </div>
 
-<h2><b>RESPONSÁVEL PELA RESERVA</b> </h2>
+      <label> <b> Data de Nascimento </b></label>
+      <input type="date" class="form-control" id="dob" />
+    </form>
 
-<div class="form-group">
-  <label for="nome"> <b>Nome* </b></label>
-  <input type="text" class="form-control ml-4" id="nome" placeholder="Digite o seu nome">
-</div>
+    <h2><b>DADOS PARA FATURAÇÃO </b></h2>
 
-<div class="form-group">
-  <label for="email"> <b>Email* </b> </label>
-  <input type="text" class="form-control ml-4" id="email" placeholder="Digite o seu email">
-</div>
+    <form>
+      <div class="form-group">
+        <label for="inputState">Morada*: </label>
+        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+      </div>
 
-<div class="form-group">
-  <label for="telefone"> <b>Telefone* </b> </label>
-  <input type="text" class="form-control ml-4" id="telefone" placeholder="Digite o seu número de telefone">
-</div>
+      <div class="form-group">
+        <label for="utente"> <b>Nº de Utente </b></label>
+        <input type="text" class="form-control" id="utente" placeholder="Digite o seu número de utente">
+      </div>
 
-<label> <b> Data de Nascimento </b></label>
+      <div class="form-group">
+        <label for="contribuinte"> <b>Nº de Contribuinte* </b> </label>
+        <input type="text" class="form-control" id="contribuinte"
+          placeholder="Digite o seu número de contribuinte">
+      </div>
 
-<h2><b>DADOS PARA FATURAÇÃO </b></h2>
+      <div class="form-group">
+        <label for="inputState"><b>Morada*: </b></label>
+        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label for="codigopostal"> <b>Código Postal* </b></label>
+        <input type="text" class="form-control" id="codigopostal" placeholder="Digite o seu código postal">
+      </div>
 
-<div class="form-group">
-  <label for="nome"> <b> Entidade/ Nome completo </b> </label>
-  <input type="text" class="form-control ml-4" id="nome" placeholder="Digite o seu nome completo">
-</div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="termos">
+        <label class="form-check-label" for="termos">
+          <b>Usar o Telefone do responsável </b>
+        </label>
+      </div>
 
-<div class="form-group">
-  <label for="utente"> <b>Nº de Utente </b></label>
-  <input type="text" class="form-control ml-4" id="utente" placeholder="Digite o seu número de utente">
-</div>
-
-<div class="form-group">
-  <label for="contribuinte"> <b>Nº de Contribuinte* </b> </label>
-  <input type="text" class="form-control ml-4" id="contribuinte" placeholder="Digite o seu número de contribuinte">
-</div>
-
-<label for="morada"> <b> Morada* </b></label>
-<textarea id="morada" rows="4" cols="100"></textarea>
-
-<div class="form-group">
-  <label for="codigopostal"> <b>Código Postal* </b></label>
-  <input type="text" class="form-control ml-4" id="codigopostal" placeholder="Digite o seu código postal">
-</div>
-
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" id="termos">
-  <label class="form-check-label" for="termos">
-  <b>Usar o Telefone do responsável </b>
-  </label>
-</div>
-
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" id="termos">
-  <label class="form-check-label" for="termos">
-  <b> Usar o e-mail do responsável </b>
-  </label>
-</div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="termos">
+        <label class="form-check-label" for="termos">
+          <b> Usar o e-mail do responsável </b>
+        </label>
+      </div>
 
 
-<p> <b> Os dados pessoais acima recolhidos destinam-se unicamente ao cumprimento das obrigações legais e a futuros contactos, relacionados com este pedido de reserva, comprometendo-se o Estádio Universitário de Lisboa/ ULisboa a guardar o seu sigilo </b> </p>
+      <p> <b> Os dados pessoais acima recolhidos destinam-se unicamente ao cumprimento das obrigações legais e a futuros
+          contactos, relacionados com este pedido de reserva, comprometendo-se o Estádio Universitário de Lisboa/
+          ULisboa
+          a guardar o seu sigilo </b> </p>
+    </form>
+    <button type="submit" class="btn btn-primary"> <b> Enviar </b></button>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 
 
 
-<button type="submit" class="btn btn-primary ml-4"> <b> Enviar </b></button>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    
-    
-    
-    
 
 
 
 
-   </body>
+</body>
 
 </html>
