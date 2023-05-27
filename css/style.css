@@ -4,6 +4,15 @@
 
 
 /*Index - Pagina Principal*/
+a{
+	text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+	text-decoration: none;
+  color: inherit;
+}
 .background-section {
 	height: 100vh;
 	background-image: url('../imgs/inicio4.png');
