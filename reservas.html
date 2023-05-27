@@ -43,6 +43,7 @@ form3.addEventListener('submit', function(event) {
 });
 
   </script>
+  
   <style>
     body {
       margin-top: 30px;
@@ -129,7 +130,7 @@ form3.addEventListener('submit', function(event) {
     <h2> <b> DADOS DA RESERVA </b> </h2>
 
     <!--Colocar cada parte como um form para ser mais facil recolher os dados-->
-    <form>
+    <form1>
       <div class="form-row">
         <div class="form-group col">
           <label for="inputState">Modalidade</label>
@@ -184,7 +185,7 @@ form3.addEventListener('submit', function(event) {
       </div>
     </form>
     
-  </form>
+  </form1>
 
   <form id="form2" style="display: none;">
     <h2><b>RESPONSÁVEL PELA RESERVA</b> </h2>
@@ -213,7 +214,7 @@ form3.addEventListener('submit', function(event) {
       <input type="date" class="form-control" id="dob" />
     </form>
     
-  </form>
+  </form2>
 
   <form id="form3" style="display: none;">
     <h2><b>DADOS PARA FATURAÇÃO </b></h2>
@@ -225,18 +226,13 @@ form3.addEventListener('submit', function(event) {
       </div>
 
       <div class="form-group">
-        <label for="utente"> <b>Nº de Utente </b></label>
-        <input type="text" class="form-control" id="utente" placeholder="Digite o seu número de utente">
-      </div>
-
-      <div class="form-group">
         <label for="contribuinte"> <b>Nº de Contribuinte* </b> </label>
         <input type="text" class="form-control" id="contribuinte"
           placeholder="Digite o seu número de contribuinte">
       </div>
 
       <div class="form-group">
-        <label for="inputState"><b>Morada*: </b></label>
+        <label for="inputState"><b>Morada* </b></label>
         <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
       </div>
       
