@@ -1,9 +1,9 @@
 const listaAtividades = [{
   "id": "0",
-  "categoria": "cannoying",
+  "categoria": "maritimos",
   "imagem": "/imgs/canyoning_geres_arado_sup_4.jpg",
   "thumb": "/imgs/inicio4.png",
-  "nome": "Cannoying no Douro",
+  "nome": "Canyoning",
   "regiao": "Parque Nacional Peneda-Gerês",
   "dificuldade": "Dificil", 
   "descricao": "Este percurso apresenta uma extensão de cerca de 1000 metros percorridos com recurso a 4 rapeis que variam entre os 6 e 40 metros de altura, caminhada pelo leito do rio, progressão aquática e pequenos saltos para a água. Localizado em pleno Parque Nacional Peneda Gerês, a uma hora e meia de automóvel do Porto, apresenta um fantástico enquadramento natural e paisagístico e grandes lagoas verdes de água límpida. Recomendamos experiência anterior em canyoning ou rapel.",
@@ -35,16 +35,16 @@ const listaAtividades = [{
     "Toalha",
     "Snack (ou requerer por 5€ extra)",
     "Água"],
-  "preco": ["Preco por pessoa: 45€"],
+  "preco": "15",
   "extra": "Snack - 5€"
 },
 {
   "id": "1",
-  "categoria": "canoagem",
+  "categoria": "maritimos",
   "imagem": "/imgs/canyoning_geres_arado_sup_4.jpg",
   "thumb": "/imgs/inicio4.png",
-  "nome": "Canoagem no Tejo",
-  "regiao": "Rio Tejo",
+  "nome": "Canoagem",
+  "regiao": "Rio Douro",
   "dificuldade": "Medio", 
   "descricao": "Este percurso apresenta uma praticada em percursos de 650 e 700 metros. Os canoístas devem passar por 18 a 25 portas, com o menor número de erros possível e num menor espaço de tempo.",
   "programa": [
@@ -74,12 +74,12 @@ const listaAtividades = [{
     "Toalha",
     "Snack (ou requerer por 5€ extra)",
     "Água"],
-  "preco": ["Preço por pessoa - 25€"],
+  "preco": "15",
   "extra": "Snack - 5€"
 },
 {
   "id": "2",
-  "categoria": "flyboard",
+  "categoria": "maritimos",
   "imagem": "/imgs/canyoning_geres_arado_sup_4.jpg",
   "thumb": "/imgs/inicio4.png",
   "nome": "Flyboard",
@@ -103,14 +103,14 @@ const listaAtividades = [{
     "Toalha",
     "Snack (ou requerer por 5€ extra)",
     "Água"],
-  "preco": ["Preço por pessoa - 80€"],
+  "preco": "15",
   "extra": "Snack - 5€"
 },
 {
   "id": "3",
-  "categoria": "paintball",
+  "categoria": "terrestres",
   "imagem": "/imgs/canyoning_geres_arado_sup_4.jpg",
-  "thumb": "/imgs/inicio4.png",
+  "thumb": "/imgs/paintball.png",
   "nome": "Paintball",
   "regiao": "Vila Nova de Gaia",
   "dificuldade": "Facil", 
@@ -136,7 +136,7 @@ const listaAtividades = [{
 },
 {
   "id": "4",
-  "categoria": "passeios tt",
+  "categoria": "terrestres",
   "imagem": "/imgs/canyoning_geres_arado_sup_4.jpg",
   "thumb": "/imgs/inicio4.png",
   "nome": "Passeios TT",
@@ -164,7 +164,7 @@ const listaAtividades = [{
 },
 {
   "id": "5",
-  "categoria": "rappel",
+  "categoria": "terrestres",
   "imagem": "/imgs/canyoning_geres_arado_sup_4.jpg",
   "thumb": "/imgs/inicio4.png",
   "nome": "Rappel",
@@ -196,7 +196,7 @@ const listaAtividades = [{
 },
 {
   "id": "6",
-  "categoria": "salto de paraquedas",
+  "categoria": "aereos",
   "imagem": "/imgs/canyoning_geres_arado_sup_4.jpg",
   "thumb": "/imgs/inicio4.png",
   "nome": "Salto de Paraquedas",
@@ -223,7 +223,7 @@ const listaAtividades = [{
 },
 {
   "id": "7",
-  "categoria": "slide",
+  "categoria": "aereos",
   "imagem": "/imgs/canyoning_geres_arado_sup_4.jpg",
   "thumb": "/imgs/inicio4.png",
   "nome": "Slide",
@@ -249,7 +249,7 @@ const listaAtividades = [{
 },
 {
   "id": "8",
-  "categoria": "parapente",
+  "categoria": "aereos",
   "imagem": "/imgs/canyoning_geres_arado_sup_4.jpg",
   "thumb": "/imgs/inicio4.png",
   "nome": "Parapente",

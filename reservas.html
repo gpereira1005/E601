@@ -11,39 +11,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
   <script src="js/loadNavbar.js"></script>
 
-  <script>
-
-var form1 = document.getElementById('form1');
-var form2 = document.getElementById('form2');
-var form2 = document.getElementById('form3');
-var formContainer = document.getElementById('formContainer');
-
-form1.addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  // Lógica para tratar o envio do form1
-
-  // Oculta o form1 e exibe o form2
-  form1.style.display = 'none';
-  form2.style.display = 'block';
-});
-
-form2.addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  // Lógica para tratar o envio do form2
-  form2.style.display = 'none';
-  form3.style.display = 'block';
-
-});
-
-form3.addEventListener('submit', function(event) {
-  event.preventDefault();
-
-});
-
-  </script>
-  
   <style>
     body {
       margin-top: 30px;
@@ -84,8 +51,6 @@ form3.addEventListener('submit', function(event) {
 
     .header {
       position: relative;
-      width: 100%;
-      height: 75%;
       color: white;
     }
 
@@ -93,7 +58,7 @@ form3.addEventListener('submit', function(event) {
       position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: fill;
+      object-fit: cover;
     }
 
     .banner {
@@ -105,8 +70,58 @@ form3.addEventListener('submit', function(event) {
       margin-left: 50%;
     }
 
-    .reservas .row {
+    .form-group {
+      padding-bottom: 10px;
+    }
+
+    .form-group label {
+      padding-bottom: 5px;
+    }
+
+    #atividade {
+      background-color: #fff;
+    }
+
+    #continuidade {
+      background-color: #fff;
+    }
+
+    .form-btn {
+      padding: 15px;
+      margin-top: 30px;
+      background-color: rgba(0, 0, 0, 0.975);
+    }
+
+    #form1 .form-btn {
+      padding: 15px;
+      margin-top: 40px;
+      background-color: rgba(0, 0, 0, 0.975);
+    }
+
+    .form-btn:hover {
+      background-color: rgba(0, 0, 0, 0.975);
+    }
+
+    #info-dados {
+      font-size: 14px;
+      margin-bottom: 0px;
+    }
+
+    .dadosConfirm {
+      background-color: #fff;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+
+    .dadosConfirm p {
       padding: 10px;
+      color: rgba(0, 0, 0, 0.975);
+    }
+
+    #caixaConfirmacao {
+      background-color: #EDEEEF;
+      padding: 20px 40px 20px 40px;
+      margin-bottom: 5px;
     }
   </style>
 
@@ -115,7 +130,7 @@ form3.addEventListener('submit', function(event) {
 
 <body>
   <div class="header">
-    <video src="imgs/parapente-reservas.mp4" width="100%" height="50%" autoplay loop muted></video>
+    <video src="imgs/intro.mp4" width="100%" height="70%" autoplay loop muted class="ratio ratio-16x9"></video>
     <div class="banner">
       <h1>Reserva de Atividades</h1>
       <p>Aventuras à distância de um clique
@@ -125,155 +140,227 @@ form3.addEventListener('submit', function(event) {
   </div>
   <div class="container p-5 reservas">
 
-    <div id="formContainer">
-    <form id="form1">
-    <h2> <b> DADOS DA RESERVA </b> </h2>
+    <div id="naoLogado" style="display: none;">
+      <div class="alert alert-warning" role="alert">
+        <h4 class="pb-3">Torne-se cliente da RadicalEvents!</h4>
+        <p>Você precisa de ser cliente para efetuar uma reserva e usufruir de oportunidades únicas.</p>
+        <p>Crie a sua conta ou faça login <a href="login.html" class="alert-link">aqui</a>.</p>
+      </div>
+    </div>
+
+    <div id="pedidoEfetuado" style="display: none;">
+      <div class="alert alert-success" role="alert">
+        <h4 class="pb-3">Pedido efetuado com sucesso!</h4>
+        <p>O seu pedido de reserva de atividade foi completado com sucesso</p>
+        <p>Pode visualizar o estado e os detalhes do pedido <a href="index.html" class="alert-link">aqui</a>.</p>
+      </div>
+    </div>
 
     <!--Colocar cada parte como um form para ser mais facil recolher os dados-->
     <form id="form1" style="display: none;">
-      <div class="form-row">
-        <div class="form-group col">
-          <label for="inputState">Modalidade</label>
-          <select id="inputState" class="form-control">
-            <option selected>Escolha a modalidade</option>
-            <option>Rapel</option>
-            <option>Parapente</option>
-            <option>Slide</option>
-            <option>Canoagem</option>
-            <option>cannyoning</option>
-            <option>Flyboard</option>
-            <option>Salto de paraquedas</option>
-            <option>Passeios TT</option>
-            <option>Paintball</option>
+      <h2> <b> DADOS DA RESERVA </b> </h2>
+      <div class="row">
+        <div class="form-group col-6">
+          <label for="atividade">Atividade</label>
+          <select id="atividade" class="form-control" name="idAtividade">
+            <option value="null">Escolha a atividade</option>
+          </select>
+        </div>
+        <div class="form-group col-6">
+          <label for="numPessoas">Nº Pessoas</label>
+          <input type="number" class="form-control" name="numPessoas" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-6">
+          <label for="data">Data da Reserva</label>
+          <input type="date" class="form-control" name="dataReserva" />
+        </div>
+        <div class="form-group col-6">
+          <label for="continuidade">Continuidade</label>
+          <select id="continuidade" class="form-control" name="continuidade">
+            <option>Escolha a continuidade</option>
+            <option value="unica">Única</option>
+            <option value="semanal">Semanal</option>
+            <option value="mensal">Mensal</option>
+            <option value="anual">Anual</option>
           </select>
         </div>
       </div>
-      <div class="form-group">
-        <label for="inputAddress">Data da Reserva</label>
-        <input type="date" class="form-control" id="dob" />
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputAddress">Hora da Inicio</label>
-          <input type="time" class="form-control" id="dob" />
+      <div class="row">
+        <div class="form-group col-6">
+          <label for="horaInicio">Hora de Início</label>
+          <input type="time" class="form-control" name="horaInicio" />
         </div>
-        <div class="form-group col-md-6">
-          <label for="inputAddress">Hora da Fim</label>
-          <input type="time" class="form-control" id="dob" />
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col">
-          <label for="inputState">Continuidade*: </label>
-          <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-            <label class="custom-control-label" for="customRadioInline1">Unica</label>
-          </div>
-          <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-            <label class="custom-control-label" for="customRadioInline2">Semanal</label>
-          </div>
-          <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
-            <label class="custom-control-label" for="customRadioInline3">Mensal</label>
-          </div>
+        <div class="form-group col-6">
+          <label for="horaFim">Hora de Fim</label>
+          <input type="time" class="form-control" name="horaFim" />
         </div>
       </div>
       <div class="form-group">
-        <label for="inputState">Observações: </label>
-        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        <label for="observacoes">Observações: </label>
+        <textarea class="form-control" name="observacoes" rows="3"></textarea>
+      </div>
+      <div class="row">
+        <div class="form-group col-2 d-grid">
+          <button type="submit" class="btn btn-primary form-btn"> <b> Seguinte </b></button>
+        </div>
       </div>
     </form>
-    
-  </form>
 
-  <form id="form2" style="display: none;">
-    <h2><b>RESPONSÁVEL PELA RESERVA</b> </h2>
-    <form>
+
+    <form id="form2" style="display: none;">
+      <h2><b>RESPONSÁVEL PELA RESERVA</b> </h2>
       <div class="form-group">
         <label for="nome"> <b>Nome* </b></label>
-        <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome">
-      </div>
-
-      <div class="form-group">
-        <label for="utente"> <b>Nº de Utente </b></label>
-        <input type="text" class="form-control" id="utente" placeholder="Digite o seu número de utente">
+        <input type="text" class="form-control" name="nome" placeholder="Digite o seu nome">
       </div>
 
       <div class="form-group">
         <label for="email"> <b>Email* </b> </label>
-        <input type="text" class="form-control" id="email" placeholder="Digite o seu email">
+        <input type="text" class="form-control" name="email" placeholder="Digite o seu email">
       </div>
 
       <div class="form-group">
-        <label for="telefone"> <b>Telefone* </b> </label>
-        <input type="text" class="form-control" id="telefone" placeholder="Digite o seu número de telefone">
+        <label for="telefone"> <b>Telemóvel* </b> </label>
+        <input type="text" class="form-control" name="telemovel" placeholder="Digite o seu número de telefone">
       </div>
 
-      <label> <b> Data de Nascimento </b></label>
-      <input type="date" class="form-control" id="dob" />
+      <div class="form-group">
+        <label for="telefone"> <b>Morada* </b> </label>
+        <input type="text" class="form-control" name="morada" placeholder="Digite o seu número de telefone">
+      </div>
+
+      <label> <b> Data de Nascimento* </b></label>
+      <input type="date" class="form-control" name="dataNascimento" />
+      <div class="row">
+        <div class="form-group col-2 d-grid">
+          <button class="btn btn-primary form-btn" id="voltarDados"> <b> Voltar </b></button>
+        </div>
+        <div class="form-group col-2 d-grid">
+          <button type="submit" class="btn btn-primary form-btn"> <b> Seguinte </b></button>
+        </div>
+      </div>
     </form>
-    
-  </form>
 
-  <form id="form3" style="display: none;">
-    <h2><b>DADOS PARA FATURAÇÃO </b></h2>
-
-    <form>
+    <form id="form3" style="display: none;">
+      <h2><b>DADOS PARA FATURAÇÃO </b></h2>
       <div class="form-group">
-        <label for="inputState">Morada*: </label>
-        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        <label for="nome"> <b>Nome* </b> </label>
+        <input type="text" class="form-control" name="nome" placeholder="Digite o seu nome completo">
       </div>
 
       <div class="form-group">
-        <label for="contribuinte"> <b>Nº de Contribuinte* </b> </label>
-        <input type="text" class="form-control" id="contribuinte"
+        <label for="nif"> <b>Número de Identificação Fiscal* </b> </label>
+        <input type="text" class="form-control" name="nif"
           placeholder="Digite o seu número de contribuinte">
       </div>
 
       <div class="form-group">
-        <label for="inputState"><b>Morada* </b></label>
-        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        <label for="pais"> <b>Pais* </b> </label>
+        <input type="text" class="form-control" name="pais" placeholder="Introduza o seu pais">
       </div>
-      
+
+      <div class="form-group">
+        <label for="morada"> <b>Morada* </b> </label>
+        <input type="text" class="form-control" name="morada" placeholder="Digite a sua morada">
+      </div>
+
       <div class="form-group">
         <label for="codigopostal"> <b>Código Postal* </b></label>
-        <input type="text" class="form-control" id="codigopostal" placeholder="Digite o seu código postal">
+        <input type="text" class="form-control" name="codigopostal" placeholder="Digite o seu código postal">
+      </div>
+      
+      <div class="row">
+        <div class="form-group col-2 d-grid">
+          <button class="btn btn-primary form-btn" id="voltarResponsavel"> <b> Voltar </b></button>
+        </div>
+        <div class="form-group col-2 d-grid">
+          <button type="submit" class="btn btn-primary form-btn"> <b> Seguinte </b></button>
+        </div>
+      </div>
+    </form>
+
+    <div id="confirmacao" style="display: none;">
+      <h2> <b> Confirmar Reserva </b> </h2>
+      <div id="caixaConfirmacao">
+        <div class="row">
+          <div class="form-group col-4">
+            <label for="atividade">Atividade:</label>
+            <div class="dadosConfirm">
+              <p>Rappel</p>
+            </div>
+          </div>
+          <div class="form-group col-4">
+            <label for="atividade">Número de Participantes:</label>
+            <div class="dadosConfirm">
+              <p>Rappel</p>
+            </div>
+          </div>
+          <div class="form-group col-4">
+            <label for="atividade">Preço:</label>
+            <div class="dadosConfirm">
+              <p id="preco">Rappel</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-6">
+            <label for="atividade">Data Reserva:</label>
+            <div class="dadosConfirm">
+              <p>10/05/2002</p>
+            </div>
+          </div>
+          <div class="form-group col-6">
+            <label for="atividade">Continuidade:</label>
+            <div class="dadosConfirm">
+              <p>Unica</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-6">
+            <label for="atividade">Hora de Inicio:</label>
+            <div class="dadosConfirm">
+              <p>05:05</p>
+            </div>
+          </div>
+          <div class="form-group col-6">
+            <label for="atividade">Hora de Fim:</label>
+            <div class="dadosConfirm">
+              <p>05:05</p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="termos">
-        <label class="form-check-label" for="termos">
-          <b>Usar o Telefone do responsável </b>
-        </label>
-      </div>
-
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="termos">
-        <label class="form-check-label" for="termos">
-          <b> Usar o e-mail do responsável </b>
-        </label>
-      </div>
-
-
-      <p> <b> Os dados pessoais acima recolhidos destinam-se unicamente ao cumprimento das obrigações legais e a futuros
+      <p id="info-dados"><b> Os dados pessoais recolhidos destinam-se unicamente ao cumprimento das obrigações
+          legais e a futuros
           contactos, relacionados com este pedido de reserva, comprometendo-se o Estádio Universitário de Lisboa/
           ULisboa
-          a guardar o seu sigilo </b> </p>
-    </form>
-    
-  </form>
+          a guardar o seu sigilo </b></p>
+      <div class="row">
+        <div class="form-group col-2 d-grid">
+          <button class="btn btn-primary form-btn" id="voltarFaturacao"> <b> Voltar </b></button>
+        </div>
+        <div class="form-group col-2 d-grid">
+          <button type="submit" class="btn btn-primary form-btn" id="confirmarReserva"> <b> Confirmar Reserva </b></button>
+        </div>
+      </div>
+    </div>
+
+
+
   </div>
 
-    <button type="submit" class="btn btn-primary"> <b> Seguinte </b></button>
-  </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 
 
+  <script src="js/reservas.js"></script>
 </body>
 
 </html>
