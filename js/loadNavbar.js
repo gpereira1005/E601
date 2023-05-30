@@ -4,7 +4,7 @@ const naoLogado = '<li class="nav-item">'+
 const logado = '<li class="nav-item dropdown">'+
 '<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>'+
 '<ul class="dropdown-menu nav-drop" aria-labelledby="navbarDropdown">'+
-  '<li><a class="dropdown-item drop-item" href="#">Reservas</a></li>'+
+  '<li><a class="dropdown-item drop-item" href="minhasReservas.html">Reservas</a></li>'+
   '<li><hr class="dropdown-divider"></li>'+
   '<li><a class="dropdown-item drop-item" id="logout" href="#">Logout</a></li>'+
 '</ul>'+

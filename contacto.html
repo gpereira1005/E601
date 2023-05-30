@@ -3,119 +3,100 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>contacto</title>
+  <title>RadicalEvents</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
   <!--CDN do bootsrap-->
-  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
   <script src="js/loadNavbar.js"></script>
   <!--CDN de icons bootsrap-->
 </head>
 
 <body>
-  <div class="detel">
-    <h1>ENTRA EM CONTACTO CONNOSCO!</h1>
-  </div>
-  <div class="mapa">
-    <a class="mapa" href="https://www.google.com/maps/place/Universidade+do+Minho+-+Campus+de+Azur%C3%A9m/@41.4506978,-8.2934876,15z/data=!4m6!3m5!1s0xd24eff2732ad231:0x3048fe13f1faee11!8m2!3d41.4506978!4d-8.2934876!16s%2Fg%2F11b6c7zrcm"><img src="imgs/mapa.png" style="width: 45%; margin-left: 5%; margin-top: 90px"></a>
-  </div>
-
-  <form>
-    <div class="nome">
-      <label for="name">Nome*</label><br>
-      <input type="text" id="name" name="name"><br>
-    </div>
-    <div class="sobrenome">
-      <label for="lname">Sobrenome*</label><br>
-      <input type="text" id="lname" name="lname"><br>
-    </div>
-    <div class="email">
-      <label for="email">Email*</label><br>
-      <input type="text" id="email" name="email"><br>
-    </div>
-    <div class="assunto">
-      <label for="assunto">Assunto*</label><br>
-      <input type="text" id="assunto" name="assunto"><br>
-    </div>
-    <div class="mensagem">
-      <label for="mensagem">Mensagem*</label><br>
-      <input type="text" id="mensagem" name="mensagem"><br>
-    </div>
-    <div class="botao">
-      <input type="button" value="Enviar" id="enviar">
-    </div>
-  </form>
-
-  <div class="iconYT">
-    <a class="iconYT" href=""><img src="imgs/icons8-youtube-30.png"></a>
-  </div>
-  <div class="iconFB">
-    <a class="iconFB" href=""><img src="imgs/icons8-facebook-30.png"></a>
-  </div>
-  <div class="iconTT">
-    <a class="iconTT" href=""><img src="imgs/icons8-twitter-30.png"></a>
-  </div>
-  <div class="iconLID">
-    <a class="iconLID" href=""><img src="imgs/icons8-linkedin-30.png"></a>
-  </div>
-  <div class="iconINST">
-    <a class="iconINST" href=""><img src="imgs/icons8-instagram-circle-30.png"></a>
-  </div>
-
-  <div class="info">
-    <p>info@radicalevents.com</p>
-  </div>
-  <div class="tel1">
-    <p>+351 253 546 879</p>
-  </div>
-  <div class="tel2">
-    <p>+351 968 933 608</p>
-  </div>
-
-  <div class="icones">
-    <div class="iconinfo">
-      <a class="iconinfo" href=""><img src="imgs/icons8-email-20.png"></a>
-    </div>
-    <div class="icontel1">
-      <a class="icontel1" href=""><img src="imgs/icons8-ringing-phone-20.png"></a>
-    </div>
-    <div class="icontel2">
-      <a class="icontel2" href=""><img src="imgs/icons8-phone-20.png"></a>
+  <div class="pagContacto">
+    <div class="row">
+      <div class="col-6">
+        <a class="mapa"
+          href="https://www.google.com/maps/place/Universidade+do+Minho+-+Campus+de+Azur%C3%A9m/@41.4506978,-8.2934876,15z/data=!4m6!3m5!1s0xd24eff2732ad231:0x3048fe13f1faee11!8m2!3d41.4506978!4d-8.2934876!16s%2Fg%2F11b6c7zrcm"><img
+            src="imgs/mapa.png" style="width: 80%; margin-left: 10%; margin-top: 110px"></a>
+      </div>
+      <div class="col-6">
+        <form id="form-contacto">
+          <h2> <b> ENTRA EM CONTACTO CONNOSCO!</b> </h2>
+          <div class="row">
+            <div class="form-group col-6">
+              <label for="nome">Nome Completo</label>
+              <input type="text" class="form-control" name="nome" />
+            </div>
+            <div class="form-group col-6">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="email" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col">
+              <label for="assunto">Assunto</label>
+              <input type="text" class="form-control" name="assunto" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col">
+              <label for="mensagem">Mensagem</label>
+              <textarea class="form-control" name="mensagem" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-2 d-grid">
+              <button type="submit" class="btn btn-primary form-btn" id="enviarContacto"> <b> Enviar </b></button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 
-  <script>
-    let listaContactos = localStorage.getItem("listaContactos");
-    if (listaContactos == null) {
-      let lista = []
-      localStorage.setItem("listaContactos", JSON.stringify(lista))
-    }
+  <footer class="footer-info">
+    <div class="container-fluid p-5">
+      <div class="row links">
+        <div class="col-md-2"><a href="https://www.linkedin.com/feed/">Linkdin</a></div>
+        <div class="col-md-2"><a href="https://www.facebook.com">Facebook</a></div>
+        <div class="col-md-2"><a href="https://www.instagram.com">Instagram</a></div>
+        <div class="col-md-2"><a href="https://www.google.com/maps">Google Maps</a></div>
+        <div class="col-md-2"><a href="https://www.youtube.com">YouTube</a></div>
+        <div class="col-md-2"><a href="https://twitter.com/home?lang=pt">Twitter</a></div>
+      </div>
+      <div class="noticias">
+        <div class="seperator"></div>
+        <p>Receba noticias, atualizações e pacotes turísticos por email.</p>
+      </div>
+      <div class="row contactos">
+        <div class="col-md-4">
+          <h4>Morada</h4>
+          <p>SEDE: Rua do Ribeiro, nº 182, Casa 2,</p>
+          <p>5100-361 Britiande - Lamego</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Contactos</h4>
+          <p>+351 968 933 608</p>
+          <p>+351 254 613 918</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Informações</h4>
+          <p>Políticas de Privacidade</p>
+          <p>Políticas de Utilização</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="footer-radical">
+    <img src="imgs/radical_logo_nb.png" class="logo-footer">
+    <p>Direitos Reservados 2020 - Radical Events </p>
+    <p>Desporto, Aventura e Turismo, Lda.</p>
+  </footer>
 
-    let form = document.querySelector(`#`); // select form
-    let formElements = form.elements; // get the elements in the form
-    const getFormData2 = () => {
-      let data = {};
-      for (const element of formElements) {
-        if (element.name.length > 0) {
-          data[element.name] = element.value;
-        }
-      }
-      return data;
-    };
-    submitButton.onclick = event => {
-      event.preventDefault();
-      data = getFormData2();
-      console.log(data);
-      SaveDataToLocalStorage(data);
-    }
-
-
-
-    /*document.getElementById('enviar').addEventListener('click', guardarDados());
-  
-    function guardarDados(){
-      console.log("Botão clicado")
-    }*/
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+  <script src="js/contacto.js"></script>
 
 </body>

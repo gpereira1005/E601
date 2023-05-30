@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         form1.style.display = 'none';
         nL.style.display = 'block';
+        body.style.overflow-y = 'hidden';
     }
 });
 

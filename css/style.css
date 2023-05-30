@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
+body{
+	overflow-x: hidden;
+}
+
 
 /*Index - Pagina Principal*/
 a{
@@ -266,6 +270,59 @@ a.thumbnail img {
 	font-weight: 400;
 	font-size: 18px;
 }
+
+.figure-overlay {
+	position: relative;
+	overflow: hidden;
+}
+
+.figure-overlay img{
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.figure-overlay .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 68%;
+	background-color: rgba(0, 0, 0, 0.5);
+	/* Fundo escuro com 70% de opacidade */
+	color: #fff;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 13px;
+}
+
+.figure-overlay:hover .overlay {
+	opacity: 1;
+}
+
+.figure-overlay .icon i {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-size: cover;
+}
+
+.figure-overlay .icon::before {
+	content: "";
+	display: block;
+	padding-top: 30%;
+}
+
 
 #indicadores {
 	background-color: #EDEEEF;
@@ -668,4 +725,147 @@ a.thumbnail img {
 	;
 }
 
+/*--------------------------CONTACTO-----------------------------------------------------*/
 
+.pagContacto{
+	margin-top: 80px;
+}
+#form-contacto{
+	margin-top: 100px;
+	margin-right: 100px;
+	margin-bottom: 100px;
+}
+
+#form-contacto h2{
+	margin-bottom: 20px;
+}
+
+
+/*--------------------------RESERVAS-----------------------------------------------------*/
+
+.reservas h1 {
+	font-family: 'Sansation';
+	color: #3C4A5B;
+	padding-bottom: 30px;
+  }
+
+  .reservas h2 {
+	font-family: 'Sansation';
+	color: #3C4A5B;
+	padding-bottom: 30px;
+	padding-top: 30px;
+  }
+
+  .reservas span {
+	font-family: 'Sansation';
+	color: #3C4A5B;
+
+  }
+
+  .reservas p {
+	font-family: 'Sansation';
+	color: #3C4A5B;
+
+  }
+
+  .reservas label {
+	font-family: 'Sansation';
+	color: #3C4A5B;
+
+  }
+
+  .header {
+	position: relative;
+	color: white;
+  }
+
+  .header video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+  .banner-reservas {
+	position: relative;
+	text-align: center;
+	font-family: 'Sansation';
+	padding: 150px;
+	color: white;
+	margin-left: 50%;
+  }
+
+  .video-reservas::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .form-group {
+	padding-bottom: 10px;
+  }
+
+  .form-group label {
+	padding-bottom: 5px;
+  }
+
+  #atividade {
+	background-color: #fff;
+  }
+
+  #continuidade {
+	background-color: #fff;
+  }
+
+  .form-btn {
+	padding: 15px;
+	margin-top: 30px;
+	background-color: rgba(0, 0, 0, 0.975);
+  }
+
+  #form1 .form-btn {
+	padding: 15px;
+	margin-top: 40px;
+	background-color: rgba(0, 0, 0, 0.975);
+  }
+
+  .form-btn:hover {
+	background-color: rgba(0, 0, 0, 0.975);
+  }
+
+  #info-dados {
+	font-size: 14px;
+	margin-bottom: 0px;
+  }
+
+  .dadosConfirm {
+	background-color: #fff;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+  }
+
+  .dadosConfirm p {
+	padding: 10px;
+	color: rgba(0, 0, 0, 0.975);
+  }
+
+  #caixaConfirmacao {
+	background-color: #EDEEEF;
+	padding: 20px 40px 20px 40px;
+	margin-bottom: 5px;
+  }
+
+
+/*------------------Minhas Reservas---------------------------------------------------*/
+
+.minhasReservas{
+	margin-top: 120px;
+}
+
+.minhasReservas h1{
+	margin-bottom: 50px;
+}
