@@ -41,7 +41,7 @@ const listaAtividades = [{
 {
   "id": "1",
   "categoria": "maritimos",
-  "imagem": "./imgs/canyoning_geres_arado_sup_4.jpg",
+  "imagem": "./imgs/canoagem2.jpg",
   "thumb": "./imgs/canoagem.jpg",
   "nome": "Canoagem",
   "regiao": "Rio Douro",
@@ -80,7 +80,7 @@ const listaAtividades = [{
 {
   "id": "2",
   "categoria": "maritimos",
-  "imagem": "/imgs/canyoning_geres_arado_sup_4.jpg",
+  "imagem": "/imgs/flyboard2.jpg",
   "thumb": "./imgs/flyboard.jpg",
   "nome": "Flyboard",
   "regiao": "Porto",
@@ -109,7 +109,7 @@ const listaAtividades = [{
 {
   "id": "3",
   "categoria": "terrestres",
-  "imagem": "./imgs/canyoning_geres_arado_sup_4.jpg",
+  "imagem": "./imgs/paint2.jpg",
   "thumb": "./imgs/paintball.png",
   "nome": "Paintball",
   "regiao": "Vila Nova de Gaia",
@@ -137,7 +137,7 @@ const listaAtividades = [{
 {
   "id": "4",
   "categoria": "terrestres",
-  "imagem": "./imgs/canyoning_geres_arado_sup_4.jpg",
+  "imagem": "./imgs/passeiostt2.jpg",
   "thumb": "./imgs/passeiosTT.jpg",
   "nome": "Passeios TT",
   "regiao": "Douro Superior e Trás-os-Montes",
@@ -165,7 +165,7 @@ const listaAtividades = [{
 {
   "id": "5",
   "categoria": "terrestres",
-  "imagem": "/imgs/canyoning_geres_arado_sup_4.jpg",
+  "imagem": "/imgs/rapel2.jpg",
   "thumb": "./imgs/rapel.jpg",
   "nome": "Rappel",
   "regiao": "Douro",
@@ -197,7 +197,7 @@ const listaAtividades = [{
 {
   "id": "6",
   "categoria": "aereos",
-  "imagem": "./imgs/canyoning_geres_arado_sup_4.jpg",
+  "imagem": "./imgs/saltopa2.jpg",
   "thumb": "./imgs/saltoParaquedas.jpg",
   "nome": "Salto de Paraquedas",
   "regiao": "Douro",
@@ -224,7 +224,7 @@ const listaAtividades = [{
 {
   "id": "7",
   "categoria": "aereos",
-  "imagem": "./imgs/canyoning_geres_arado_sup_4.jpg",
+  "imagem": "./imgs/slide2.jpg",
   "thumb": "./imgs/slide.jpg",
   "nome": "Slide",
   "regiao": "Gerês",
@@ -250,7 +250,7 @@ const listaAtividades = [{
 {
   "id": "8",
   "categoria": "aereos",
-  "imagem": "./imgs/canyoning_geres_arado_sup_4.jpg",
+  "imagem": "./imgs/parapente2.jpg",
   "thumb": "./imgs/parapente.jpg",
   "nome": "Parapente",
   "regiao": "Douro Litoral, Minho e Trás os Montes.",
