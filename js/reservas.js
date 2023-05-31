@@ -9,14 +9,17 @@ let confirmacao = document.getElementById('confirmacao');
 let confirmarReserva = document.getElementById('confirmarReserva');
 let pedidoEfetuado = document.getElementById('pedidoEfetuado');
 let atividade = document.getElementById('atividade');
+let utilizadorLigado = JSON.parse(localStorage.getItem('utilizadorLigado'));
 
 let data1 = {};
-let data2 = {}; 
+let data2 = {};
 let data3 = {};
 let custo = 0;
 
+let atividades = JSON.parse(localStorage.getItem('atividades'));
+
 document.addEventListener('DOMContentLoaded', function () {
-    let atividades = JSON.parse(localStorage.getItem('atividades')); 
+    let atividades = JSON.parse(localStorage.getItem('atividades'));
     atividades.forEach((a) => {
         const optionElement = document.createElement("option");
         optionElement.text = a.nome;
@@ -34,30 +37,52 @@ document.addEventListener('DOMContentLoaded', function () {
 
 form1.addEventListener('submit', function (event) {
     event.preventDefault();
-    data1 = getFormData(form1.elements)
-    console.log(data1);
-    form1.style.display = 'none';
-    form2.style.display = 'block';
+    let valido = validarForm(form1);
+    console.log(valido)
+    if (valido) {
+        data1 = getFormData(form1.elements)
+        console.log(data1);
+        form1.style.display = 'none';
+        form2.style.display = 'block';
+    } else {
+        alert("Preencha todos os campos")
+    }
 });
 
 form2.addEventListener('submit', function (event) {
     event.preventDefault();
-    data2 = getFormData(form2.elements)
-    console.log(data2);
-    form2.style.display = 'none';
-    form3.style.display = 'block';
-
+    let valido = validarForm(form2);
+    if (valido) {
+        data2 = getFormData(form2.elements)
+        console.log(data2);
+        form2.style.display = 'none';
+        form3.style.display = 'block';
+    } else {
+        alert("Preencha todos os campos");
+    }
 });
 
 form3.addEventListener('submit', function (event) {
     event.preventDefault();
-    data3 = getFormData(form3.elements)
-    console.log(data3);
-    form3.style.display = 'none';
-    confirmacao.style.display = 'block';
-    custo = calcPreco(data1.idAtividade, data1.numPessoas, data1.horaInicio, data1.horaFim)
-    document.getElementById('preco').innerText = custo; 
-    console.log("Preco calculado")
+    let valido = validarForm(form3);
+    if(valido){
+        data3 = getFormData(form3.elements)
+        console.log(data3);
+        form3.style.display = 'none';
+        confirmacao.style.display = 'block';
+        custo = calcPreco(data1.idAtividade, data1.numPessoas, data1.horaInicio, data1.horaFim)
+        let atividade = atividades.find(u => u.id === data1.idAtividade);
+        document.getElementById('confirmAtividade').innerText = atividade.nome;
+        document.getElementById('confirmParticipantes').innerText = data1.numPessoas;
+        document.getElementById('confirmPreco').innerText = custo;
+        document.getElementById('confirmData').innerText = data1.dataReserva;
+        document.getElementById('confirmContinuidade').innerText = data1.continuidade;
+        document.getElementById('confirmHoraInicio').innerText = data1.horaInicio;
+        document.getElementById('confirmHoraFim').innerText = data1.horaFim;
+        console.log("Preco calculado")
+    }else{
+        alert("Preencha todos os campos")
+    }
 
 });
 
@@ -88,11 +113,12 @@ confirmarReserva.addEventListener('click', function (event) {
     pedido = data1;
     pedido.responsavel = data2;
     pedido.dadosFaturacao = data3;
-    pedido.preco = custo; 
+    pedido.preco = custo;
+    pedido.cliente = utilizadorLigado.id
     console.log(pedido)
-    let pedidos = JSON.parse(localStorage.getItem('pedidos')); 
-    pedidos.push(pedido); 
-    localStorage.setItem('pedidos', JSON.stringify(pedidos)); 
+    let pedidos = JSON.parse(localStorage.getItem('pedidos'));
+    pedidos.push(pedido);
+    localStorage.setItem('pedidos', JSON.stringify(pedidos));
     confirmacao.style.display = 'none';
     pedidoEfetuado.style.display = 'block';
 
@@ -101,8 +127,8 @@ confirmarReserva.addEventListener('click', function (event) {
 const getFormData = (idForm) => {
     let data = {};
     for (const element of idForm) {
-        if (element.name.length > 0) { 
-            if (element.tagName === 'SELECT') { 
+        if (element.name.length > 0) {
+            if (element.tagName === 'SELECT') {
                 if (element.selectedIndex !== -1) {
                     data[element.name] = element.options[element.selectedIndex].value;
                 }
@@ -114,27 +140,44 @@ const getFormData = (idForm) => {
     return data;
 };
 
+const validarForm = (form) => {
+    // Obtém todos os campos do formulário
+    const inputs = form.querySelectorAll('input, select');
+
+    // Define uma variável para controlar se todos os campos estão preenchidos
+    let valido = true;
+
+    // Verifica cada campo se está preenchido ou não
+    inputs.forEach(function (input) {
+        if (input.value.trim() === '') {
+            valido = false;
+        }
+    });
+
+    return valido;
+}
+
 const preencherForm = (idForm, jsonData) => {
     let formElements = idForm.elements;
-  
-    for (const element of formElements) {
-      if (element.name.length > 0 && jsonData.hasOwnProperty(element.name)) {
-        if (element.tagName === 'SELECT') {
-          for (let i = 0; i < element.options.length; i++) {
-            if (element.options[i].value === jsonData[element.name]) {
-              element.selectedIndex = i;
-              break;
-            }
-          }
-        } else {
-          element.value = jsonData[element.name];
-        }
-      }
-    }
-  };
 
-  const calcPreco = (idAtiv, numPessoas, horaInicio, horaFim) => {
-    let atividades = JSON.parse(localStorage.getItem("atividades")); 
+    for (const element of formElements) {
+        if (element.name.length > 0 && jsonData.hasOwnProperty(element.name)) {
+            if (element.tagName === 'SELECT') {
+                for (let i = 0; i < element.options.length; i++) {
+                    if (element.options[i].value === jsonData[element.name]) {
+                        element.selectedIndex = i;
+                        break;
+                    }
+                }
+            } else {
+                element.value = jsonData[element.name];
+            }
+        }
+    }
+};
+
+const calcPreco = (idAtiv, numPessoas, horaInicio, horaFim) => {
+    let atividades = JSON.parse(localStorage.getItem("atividades"));
     let ativ = atividades.find(a => a.id === idAtiv);
     horaI = horaInicio.split(':');
     horaF = horaFim.split(':');
@@ -143,5 +186,5 @@ const preencherForm = (idForm, jsonData) => {
     console.log("inico:" + horaF[0])
     console.log("fim:" + horaI[0])
     let preco = ativ.preco * numPessoas * (horaF[0] - horaI[0]);
-    return preco; 
-  }
+    return preco;
+}

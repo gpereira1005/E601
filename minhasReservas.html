@@ -19,46 +19,48 @@
         <div class="row">
             <div class="col-2">
                 <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-                      Todos
+                    <a href="#" class="list-group-item list-group-item-action active" data-target="pedidos">
+                        Pedidos
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action">Pedidos</a>
-                    <a href="#" class="list-group-item list-group-item-action">Eftuadas</a>
-                    <a href="#" class="list-group-item list-group-item-action">Canceladas</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-target="reservas">Reservas</a>
                 </div>
             </div>
             <div class="col-1"></div>
-            <div class="col-9">
-                <table class="table">
+            <div class="col">
+                <table class="table tabelaPessoal table-bordered" id="tabela-pedidos" style="display: block;">
                     <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Atividade</th>
+                            <th scope="col">Data</th>
+                            <th scope="col">Hora</th>
+                            <th scope="col">Preço</th>
+                        </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
+                        
                     </tbody>
-                  </table>
+                </table>
+
+                <table class="table tabelaPessoal table-bordered" id="tabela-reservas" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Atividade</th>
+                            <th scope="col">Data</th>
+                            <th scope="col">Hora</th>
+                            <th scope="col">Preço</th>
+                            <th scope="col">Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+
+                
             </div>
         </div>
     </div>
+    <script src="js/minhasReservas.js"></script>
 </body>

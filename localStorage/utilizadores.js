@@ -1,4 +1,5 @@
 let listaUtilizadores = [{
+    "id": "0",
     "role": "admin",
     "username": "admin",
     "nome": "Administrador",
@@ -6,6 +7,7 @@ let listaUtilizadores = [{
     "password": "admin"
 },
 {
+    "id": "1",
     "role": "cliente",
     "username": "cliente123",
     "nome": "Cliente 1",

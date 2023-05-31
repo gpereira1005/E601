@@ -5,7 +5,8 @@ let atividades = JSON.parse(localStorage.getItem("atividades"));
 
 const atividade = atividades[id]; //Vai buscar a atividade que está na posiçao correspondente ao ID
 console.log(atividade);
-document.getElementById('categoria').innerText = atividade.categoria; //Coloca o nome da categoria no p que tem o id categoria
+document.getElementById('fotoinicial').style.backgroundImage = 'url('+atividade.thumb+')';
+document.getElementById('categoria').innerText = atividade.nome; //Coloca o nome da categoria no p que tem o id categoria
 document.getElementById('nome').innerText = atividade.nome;
 document.getElementById('regiao').innerText = atividade.regiao;
 document.getElementById('dificuldade').innerText = atividade.dificuldade;
