@@ -40,5 +40,5 @@ function importNavbar() {
 
   function logout(){
     localStorage.removeItem('utilizadorLigado');
-    window.location.href = "../index.html";
+    window.location.href = "index.html";
   }

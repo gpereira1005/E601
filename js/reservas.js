@@ -117,6 +117,8 @@ confirmarReserva.addEventListener('click', function (event) {
     pedido.cliente = utilizadorLigado.id
     console.log(pedido)
     let pedidos = JSON.parse(localStorage.getItem('pedidos'));
+    let idNovo = pedidos.length + 1;
+    pedido.id = idNovo; 
     pedidos.push(pedido);
     localStorage.setItem('pedidos', JSON.stringify(pedidos));
     confirmacao.style.display = 'none';

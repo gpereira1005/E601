@@ -12,7 +12,7 @@ atividades.forEach(atividade => {
 
         let html2 = '<li><a href="atividades.html?id='+atividade.id+'">'+
            '<span class="ico" style="z-index: 99;">'+
-                '<i class="bi bi-bicycle"></i>'+
+                '<img src='+atividade.icon+' style="width: 20px; height: 20px;"></img>'+
             '</span>'+
             '<span class="info">'+atividade.nome+'</span>'+
         '</a>'+
