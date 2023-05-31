@@ -24,7 +24,7 @@ let listaReservas = [
       "codigoPostal": "4990-735"
     },
     "preco": "25€",
-    "estado": "aceite",
+    "estado": "Aceite",
     "funcResponsavel": "1"
   },
   {
@@ -52,7 +52,7 @@ let listaReservas = [
       "codigoPostal": "4990-735"
     },
     "preco": "15€",
-    "estado": "cancelada",
+    "estado": "Cancelada",
     "funcResponsavel": "2"
   },
   {
@@ -80,7 +80,7 @@ let listaReservas = [
       "codigoPostal": "4990-735"
     },
     "preco": "35€",
-    "estado": "cancelada",
+    "estado": "Cancelada",
     "funcResponsavel": "2"
   }
   ]
