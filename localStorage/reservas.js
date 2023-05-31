@@ -25,7 +25,7 @@ let listaReservas = [
     },
     "preco": "25€",
     "estado": "aceite",
-    "responsavel": "Funcionário 1"
+    "funcResponsavel": "1"
   },
   {
     "id": "1",
@@ -53,7 +53,7 @@ let listaReservas = [
     },
     "preco": "15€",
     "estado": "cancelada",
-    "responsavel": "Funcionário 2"
+    "funcResponsavel": "2"
   },
   {
     "id": "3",
@@ -81,7 +81,7 @@ let listaReservas = [
     },
     "preco": "35€",
     "estado": "cancelada",
-    "responsavel": "Funcionário 2"
+    "funcResponsavel": "2"
   }
   ]
   

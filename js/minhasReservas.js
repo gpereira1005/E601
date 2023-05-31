@@ -40,7 +40,8 @@ listGroupItems.forEach(function(item) {
 });
 
 for (let i = 0; i < pedidos.length; i++) {
-    let row = document.createElement("tr");
+    if(pedidos[i].id_cliente === utilizadorLigado.id){
+      let row = document.createElement("tr");
 
     let idCell = document.createElement("td");
     idCell.textContent = pedidos[i].id;
@@ -65,9 +66,11 @@ for (let i = 0; i < pedidos.length; i++) {
     row.appendChild(precoCell);
 
     tbodyPedidos.appendChild(row);
+    }
 }
 
 for (let i = 0; i < reservas.length; i++) {
+  if(reservas[i].id_cliente === utilizadorLigado.id){
     let row = document.createElement("tr");
 
     let idCell = document.createElement("td");
@@ -97,4 +100,5 @@ for (let i = 0; i < reservas.length; i++) {
     row.appendChild(estadoCell);
 
     tbodyReservas.appendChild(row);
+  }
 }
