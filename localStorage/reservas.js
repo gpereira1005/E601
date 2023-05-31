@@ -21,7 +21,7 @@ let listaReservas = [
       "nif": "123456789",
       "pais": "portugal",
       "morada": "Barcelos",
-      "codigoPostal": "4990-735"
+      "codigopostal": "4990-735"
     },
     "preco": "25€",
     "estado": "Aceite",
@@ -49,7 +49,7 @@ let listaReservas = [
       "nif": "123456789",
       "pais": "Portugal",
       "morada": "Braga",
-      "codigoPostal": "4990-735"
+      "codigopostal": "4990-735"
     },
     "preco": "15€",
     "estado": "Cancelada",
@@ -77,7 +77,7 @@ let listaReservas = [
       "nif": "123456789",
       "pais": "portugal",
       "morada": "Porto",
-      "codigoPostal": "4990-735"
+      "codigopostal": "4990-735"
     },
     "preco": "35€",
     "estado": "Cancelada",

@@ -114,7 +114,7 @@ confirmarReserva.addEventListener('click', function (event) {
     pedido.responsavel = data2;
     pedido.dadosFaturacao = data3;
     pedido.preco = custo;
-    pedido.cliente = utilizadorLigado.id
+    pedido.id_cliente = utilizadorLigado.id
     console.log(pedido)
     let pedidos = JSON.parse(localStorage.getItem('pedidos'));
     let idNovo = pedidos.length + 1;
