@@ -2,6 +2,7 @@ import listaAtividades from './atividades.js';
 import listaPedidos from './pedidos.js';
 import listaReservas from './reservas.js';
 import listaUtilizadores from './utilizadores.js';
+import listaFuncionarios from './funcionarios.js';
 
 
 if(!localStorage.getItem('atividades')){
@@ -23,4 +24,8 @@ if(!localStorage.getItem('utilizadores')){
 if(!localStorage.getItem('contactos')){
     let lista = []
     localStorage.setItem("contactos", JSON.stringify(lista))
+}
+
+if(!localStorage.getItem('funcionarios')){
+    localStorage.setItem("funcionarios", JSON.stringify(listaFuncionarios))
 }
