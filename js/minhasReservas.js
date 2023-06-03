@@ -21,7 +21,7 @@ listGroupItems.forEach(function(item) {
     // Obtém todas as tabelas
     let tabelas = document.querySelectorAll('.tabelaPessoal');
 
-    // Esconde todas as tabelas
+    //Esconde as outras tabelas
     tabelas.forEach(function(tabela) {
       tabela.style.display = 'none';
     });
@@ -30,7 +30,7 @@ listGroupItems.forEach(function(item) {
         item.classList.remove('active');
       });
 
-    // Exibe a tabela correspondente ao alvo (target)
+    //Mostra a tabela correspondente
     let tabelaAlvo = document.getElementById('tabela-' + target);
     if (tabelaAlvo) {
       tabelaAlvo.style.display = 'block';

@@ -168,6 +168,7 @@ a.thumbnail {
 a.thumbnail img {
 	width: 100%;
 	max-width: none;
+	
 }
 
 .adventure-holder .text-block .centered {
@@ -610,9 +611,10 @@ a.thumbnail img {
 }
 
 .imagem-des {
-	height: 500px;
-	width: auto;
-
+	height: 400px;
+	width: 50%;
+	max-width: none;
+	object-fit: cover;
 }
 
 .btn {

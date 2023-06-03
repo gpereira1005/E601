@@ -142,14 +142,9 @@ const getFormData = (idForm) => {
     return data;
 };
 
-const validarForm = (form) => {
-    // Obtém todos os campos do formulário
+const validarForm = (form) => {o
     const inputs = form.querySelectorAll('input, select');
-
-    // Define uma variável para controlar se todos os campos estão preenchidos
     let valido = true;
-
-    // Verifica cada campo se está preenchido ou não
     inputs.forEach(function (input) {
         if (input.value.trim() === '') {
             valido = false;
