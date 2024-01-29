@@ -1,6 +1,6 @@
 # RadicalEvents Website
 
-This project consists of a frontend for a website managing extreme activities. It is composed of two parts:
+This project consists of a frontend website for the management of radical activities. It is composed of two parts:
 
   • FrontOffice (HTML, CSS, JS) - Visualization of information and booking of radical activities by customers.<br />
   • BackOffice (Vue.js) - Management of bookings, resources and information for activities by management team.<br />
