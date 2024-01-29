@@ -13,4 +13,4 @@ Admin Login: User:admin / Pw:admin
 
 ## Others:
 
-Backoffice Repository: https://github.com/gpereira1005/E601_BO
+Backoffice Repository: https://github.com/gpereira1005/RadicalEvents-BackOffice
